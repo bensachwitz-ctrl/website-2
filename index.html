@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Swamp Fox Agency | Forestry, Logging &amp; Trucking Insurance | South Carolina Since 1987</title>
+<meta name="description" content="Swamp Fox Agency — the only SCTPA-endorsed insurance agency in South Carolina. Expert forestry, logging, trucking, commercial and personal insurance since 1987. Four offices across SC and GA.">
+<meta name="keywords" content="forestry insurance South Carolina, logging insurance SC, trucking insurance Moncks Corner, SCTPA endorsed agency, commercial insurance Berkeley County, loss control services SC, timber insurance, log truck insurance, workers compensation logging, swamp fox agency">
+<meta property="og:title" content="Swamp Fox Agency | South Carolina Forestry &amp; Insurance Authority">
+<meta property="og:description" content="The only endorsed agency of the South Carolina Timber Producers Association. Protecting loggers, haulers, and Lowcountry businesses since 1987.">
+<meta property="og:image" content="images/swamp-fox-logo.webp">
+<meta property="og:type" content="website">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://swampfoxagency.com/">
+<link rel="icon" href="images/swamp-fox-logo.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"InsuranceAgency","name":"Swamp Fox Agency","url":"https://swampfoxagency.com","logo":"https://swampfoxagency.com/images/swamp-fox-logo.webp","description":"The only endorsed agency of the South Carolina Timber Producers Association. Expert forestry, logging, trucking, commercial, and personal insurance across SC and GA since 1987.","telephone":"+18437613999","email":"info@swampfoxagency.com","foundingDate":"1987","numberOfEmployees":{"@type":"QuantitativeValue","value":"20"},"areaServed":[{"@type":"State","name":"South Carolina"},{"@type":"State","name":"Georgia"},{"@type":"State","name":"North Carolina"},{"@type":"State","name":"Virginia"},{"@type":"State","name":"Florida"},{"@type":"State","name":"Alabama"},{"@type":"State","name":"Mississippi"},{"@type":"State","name":"Tennessee"}],"address":{"@type":"PostalAddress","streetAddress":"1122 Pinopolis Rd","addressLocality":"Moncks Corner","addressRegion":"SC","postalCode":"29461","addressCountry":"US"},"hasMap":"https://www.google.com/maps/search/?api=1&query=1122+Pinopolis+Rd+Moncks+Corner+SC+29461","contactPoint":[{"@type":"ContactPoint","telephone":"+18437613999","contactType":"customer service","areaServed":"SC","availableLanguage":"English"},{"@type":"ContactPoint","telephone":"+18436280280","contactType":"customer service","contactType":"personal lines","areaServed":"SC","availableLanguage":"English"}],"sameAs":["https://www.facebook.com/Swamp-Fox-Agency-161794570507166/","https://www.instagram.com/swampfoxagency/","https://www.linkedin.com/company/swamp-fox-agency","https://www.youtube.com/@swampfoxagency"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Insurance Services","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Forestry & Logging Insurance","description":"Loggers broad form, equipment, workers comp, motor truck cargo"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Commercial Trucking Insurance","description":"Log truck fleets, commercial auto, cargo, DOT compliance"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Loss Control & Safety Consulting"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Commercial Lines Insurance"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Personal Lines Insurance"}}]}}
+</script>
+<style>
+/* ============================================================
+   SWAMP FOX AGENCY — MODERN HERITAGE DESIGN SYSTEM
+   Brand: Teal #00635B | Forest #1E392A | Gold #C49A3C
+   Sage #B7CDC2 | Cream #FDFBF7 | Charcoal #1C2B2E
+   ============================================================ */
+:root{
+  --teal:#00635B;--teal-dark:#004A44;--teal-lt:#2D8A7E;
+  --forest:#1E392A;--sage:#B7CDC2;--sage-bg:#EDF4F1;
+  --cream:#FDFBF7;--charcoal:#1C2B2E;--mid:#4A6070;
+  --border:#D0DDD9;--parchment:#F5F0E8;--gold:#C49A3C;
+  --gold-lt:#F5E9C8;--dark:#0B1F17;--white:#ffffff;
+  --ff-serif:"Playfair Display",Georgia,serif;
+  --ff-sans:"Inter",system-ui,sans-serif;
+  --radius:4px;--trans:.22s ease;
+  --sh-sm:0 2px 8px rgba(0,0,0,.06);
+  --sh-md:0 6px 24px rgba(0,0,0,.1);
+  --sh-lg:0 16px 48px rgba(0,0,0,.14);
+  --sh-xl:0 24px 64px rgba(0,0,0,.18);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--ff-sans);color:var(--charcoal);background:var(--cream);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,h4{font-family:var(--ff-serif);line-height:1.18}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button{font-family:var(--ff-sans);cursor:pointer;border:none;background:none}
+
+/* ---- TOPBAR ---- */
+#topbar{background:var(--forest);color:rgba(255,255,255,.7);font-size:.72rem;padding:.38rem 2rem;display:flex;justify-content:space-between;align-items:center;gap:.5rem;flex-wrap:wrap;transition:transform .3s ease}
+#topbar a{color:var(--sage);transition:color var(--trans)}
+#topbar a:hover{color:#fff}
+.tb-left{display:flex;gap:1.3rem;align-items:center;flex-wrap:wrap}
+.tb-right{display:flex;gap:.9rem;align-items:center}
+.soc{display:flex;align-items:center;gap:.25rem;font-size:.7rem;color:rgba(255,255,255,.48);transition:color var(--trans)}
+.soc:hover{color:#fff}
+.soc svg{width:12px;height:12px;fill:currentColor;flex-shrink:0}
+
+/* ---- TRUST BAR ---- */
+.trust-bar{background:var(--gold);color:var(--forest);font-size:.73rem;font-weight:700;padding:.35rem 1rem;letter-spacing:.07em;text-transform:uppercase;display:flex;align-items:center;justify-content:center;gap:.7rem;flex-wrap:wrap}
+.trust-bar img{height:20px;width:auto}
+
+/* ---- NAV ---- */
+#nav{position:sticky;top:0;z-index:900;background:rgba(253,251,247,.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);transition:box-shadow var(--trans)}
+#nav.scrolled{box-shadow:var(--sh-md)}
+.nav-in{max-width:1280px;margin:0 auto;padding:.6rem 2rem;display:flex;align-items:center;gap:1rem}
+.nav-logo{height:50px;flex-shrink:0;cursor:pointer;transition:transform var(--trans)}
+.nav-logo:hover{transform:scale(1.03)}
+.nav-links{display:flex;align-items:center;gap:clamp(.15rem,.45vw,.75rem);flex:1;overflow-x:auto;scrollbar-width:none}
+.nav-links::-webkit-scrollbar{display:none}
+.nl{font-size:.76rem;font-weight:600;color:var(--mid);white-space:nowrap;padding:.28rem .36rem;position:relative;cursor:pointer;letter-spacing:.02em;transition:color var(--trans)}
+.nl::after{content:"";position:absolute;bottom:-2px;left:0;right:0;height:2px;background:var(--teal);transform:scaleX(0);transform-origin:left;transition:transform .2s ease}
+.nl:hover,.nl.active{color:var(--forest)}
+.nl.active::after,.nl:hover::after{transform:scaleX(1)}
+.nav-cta{background:var(--teal);color:#fff;padding:.46rem 1.1rem;border-radius:var(--radius);font-size:.78rem;font-weight:700;letter-spacing:.02em;white-space:nowrap;transition:background var(--trans),transform var(--trans),box-shadow var(--trans)}
+.nav-cta:hover{background:var(--forest);transform:translateY(-1px);box-shadow:0 4px 16px rgba(0,99,91,.3)}
+
+/* ---- HERO — SPLIT PANEL ---- */
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:93vh;position:relative}
+.hero-brand{background:var(--forest);display:flex;flex-direction:column;justify-content:center;padding:4.5rem 4rem;position:relative;overflow:hidden}
+/* Animated crosshatch texture */
+.hero-brand::before{content:"";position:absolute;inset:0;opacity:.06;background-image:repeating-linear-gradient(45deg,var(--sage) 0,var(--sage) 1px,transparent 0,transparent 50%),repeating-linear-gradient(-45deg,var(--sage) 0,var(--sage) 1px,transparent 0,transparent 50%);background-size:16px 16px;animation:texShift 30s linear infinite}
+@keyframes texShift{0%{background-position:0 0,0 0}100%{background-position:100px 100px,-100px 100px}}
+/* Teal glow orb */
+.hero-brand::after{content:"";position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(0,99,91,.35) 0%,transparent 70%);bottom:-100px;right:-80px;pointer-events:none;animation:orb 8s ease-in-out infinite alternate}
+@keyframes orb{0%{transform:scale(1) translate(0,0)}100%{transform:scale(1.15) translate(20px,-20px)}}
+.hero-seal{width:156px;height:156px;border-radius:50%;background:var(--cream);box-shadow:0 0 0 8px rgba(183,205,194,.12),0 0 0 16px rgba(183,205,194,.06),0 12px 48px rgba(0,0,0,.35);display:flex;align-items:center;justify-content:center;padding:8px;margin-bottom:2rem;flex-shrink:0;position:relative;z-index:2;transition:transform .5s ease,box-shadow .5s ease}
+.hero-seal:hover{transform:scale(1.04);box-shadow:0 0 0 10px rgba(183,205,194,.18),0 0 0 20px rgba(183,205,194,.08),0 16px 56px rgba(0,0,0,.4)}
+.hero-seal img{width:auto;height:128px;object-fit:contain}
+.hero-rule{width:44px;height:2px;background:var(--gold);margin-bottom:1.6rem;position:relative;z-index:2}
+.hero h1{font-size:clamp(1.9rem,3.2vw,3rem);color:#fff;margin-bottom:1.2rem;font-weight:700;position:relative;z-index:2;line-height:1.15}
+.hero h1 em{font-style:italic;color:var(--sage);display:block}
+.hero-sub{font-size:.95rem;color:rgba(255,255,255,.76);max-width:430px;margin-bottom:2rem;line-height:1.74;position:relative;z-index:2}
+.hero-btns{display:flex;gap:.85rem;flex-wrap:wrap;position:relative;z-index:2}
+.btn-hero{background:var(--gold);color:var(--forest);padding:.78rem 1.9rem;border-radius:var(--radius);font-size:.9rem;font-weight:700;letter-spacing:.03em;transition:all var(--trans);position:relative;overflow:hidden}
+.btn-hero::after{content:"";position:absolute;inset:0;background:rgba(255,255,255,.15);opacity:0;transition:opacity var(--trans)}
+.btn-hero:hover{background:#d4aa4c;transform:translateY(-2px);box-shadow:0 8px 28px rgba(196,154,60,.4)}
+.btn-hero:hover::after{opacity:1}
+.btn-ghost{background:transparent;color:#fff;padding:.78rem 1.7rem;border-radius:var(--radius);font-size:.9rem;font-weight:600;border:1.5px solid rgba(255,255,255,.35);transition:all var(--trans)}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08);transform:translateY(-1px)}
+.hero-creds{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem;margin-top:2.5rem;position:relative;z-index:2}
+.hero-cred{background:rgba(255,255,255,.06);border:1px solid rgba(183,205,194,.14);border-radius:var(--radius);padding:.7rem .9rem;transition:background var(--trans)}
+.hero-cred:hover{background:rgba(255,255,255,.1)}
+.hero-cred strong{display:block;color:#fff;font-size:.92rem;font-family:var(--ff-serif);margin-bottom:.1rem}
+.hero-cred span{font-size:.7rem;color:rgba(255,255,255,.5);letter-spacing:.03em}
+.hero-photo{position:relative;overflow:hidden}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;transition:transform 8s ease}
+.hero-photo:hover img{transform:scale(1.04)}
+.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(to right,rgba(30,57,42,.32) 0%,transparent 55%)}
+.hero-tag{position:absolute;bottom:1.4rem;left:1.4rem;background:rgba(11,31,23,.78);color:rgba(255,255,255,.78);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;padding:.32rem .75rem;border-radius:2px;backdrop-filter:blur(4px)}
+
+/* ---- WHO WE INSURE STRIP ---- */
+.insure-strip{background:var(--charcoal);padding:1rem 2rem;display:flex;align-items:center;justify-content:center;gap:.55rem;flex-wrap:wrap}
+.in-lbl{font-size:.63rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-right:.3rem;white-space:nowrap}
+.in-tag{background:rgba(255,255,255,.07);color:rgba(255,255,255,.72);border:1px solid rgba(255,255,255,.1);border-radius:2px;padding:.26rem .7rem;font-size:.71rem;font-weight:500;white-space:nowrap;transition:background var(--trans),color var(--trans),border-color var(--trans);cursor:default}
+.in-tag:hover{background:rgba(0,99,91,.3);color:#fff;border-color:rgba(0,99,91,.5)}
+
+/* ---- SECTIONS ---- */
+.sec{padding:5.5rem 2rem}
+.sec-in{max-width:1200px;margin:0 auto}
+.badge{display:inline-flex;align-items:center;gap:.42rem;font-size:.67rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--teal);margin-bottom:.75rem}
+.badge::before{content:"";display:inline-block;width:18px;height:1.5px;background:var(--teal);flex-shrink:0}
+.sec-title{font-size:clamp(1.7rem,2.8vw,2.55rem);color:var(--forest);margin-bottom:.9rem;line-height:1.14}
+.sec-sub{font-size:.96rem;color:var(--mid);max-width:580px;line-height:1.74;margin-bottom:2.2rem}
+.bg-forest{background:var(--forest)}
+.bg-forest .badge{color:var(--sage)}.bg-forest .badge::before{background:var(--sage)}
+.bg-forest .sec-title{color:#fff}.bg-forest .sec-sub{color:rgba(255,255,255,.65)}
+.bg-sage{background:var(--sage-bg)}
+.bg-parch{background:var(--parchment)}
+.bg-dark{background:var(--dark)}
+.bg-teal{background:var(--teal)}
+.bg-teal .badge{color:rgba(255,255,255,.75)}.bg-teal .badge::before{background:rgba(255,255,255,.75)}
+.bg-teal .sec-title{color:#fff}.bg-teal .sec-sub{color:rgba(255,255,255,.75)}
+
+/* ---- BUTTONS ---- */
+.btn{display:inline-flex;align-items:center;gap:.4rem;padding:.62rem 1.45rem;border-radius:var(--radius);font-size:.86rem;font-weight:600;letter-spacing:.02em;transition:all var(--trans);cursor:pointer;border:none}
+.btn-primary{background:var(--teal);color:#fff}
+.btn-primary:hover{background:var(--forest);transform:translateY(-1px);box-shadow:0 4px 16px rgba(0,99,91,.3)}
+.btn-outline{background:transparent;color:var(--teal);border:1.5px solid var(--teal)}
+.btn-outline:hover{background:var(--teal);color:#fff;transform:translateY(-1px)}
+.btn-gold{background:var(--gold);color:var(--forest);font-weight:700}
+.btn-gold:hover{background:#d4aa4c;transform:translateY(-1px)}
+.btn-white{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.38)}
+.btn-white:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+.btn-lg{padding:.82rem 2.1rem;font-size:.92rem}
+
+/* ---- STATS ---- */
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border-radius:var(--radius);overflow:hidden;margin-top:3rem}
+.stat-item{background:var(--cream);padding:1.8rem;text-align:center;transition:background var(--trans)}
+.stat-item:hover{background:#fff}
+.stat-num{font-family:var(--ff-serif);font-size:2.4rem;font-weight:700;color:var(--forest);line-height:1;transition:color var(--trans)}
+.stat-item:hover .stat-num{color:var(--teal)}
+.stat-lbl{font-size:.74rem;color:var(--mid);margin-top:.35rem;letter-spacing:.03em}
+.stat-sub{font-size:.68rem;color:var(--teal);margin-top:.15rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+
+/* ---- SPLIT ---- */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.split-img{border-radius:var(--radius);overflow:hidden;position:relative}
+.split-img img{width:100%;height:420px;object-fit:cover;display:block;transition:transform .6s ease}
+.split-img:hover img{transform:scale(1.03)}
+.split-img::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(11,31,23,.2),transparent 60%)}
+.split-text p{color:var(--mid);margin-bottom:1.1rem;line-height:1.75}
+
+/* ---- CARDS ---- */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(262px,1fr));gap:1.4rem}
+.card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:box-shadow var(--trans),transform var(--trans),border-color var(--trans)}
+.card:hover{box-shadow:var(--sh-xl);transform:translateY(-4px);border-color:var(--teal)}
+.card-img{width:100%;height:200px;object-fit:cover;display:block;transition:transform .5s ease}
+.card:hover .card-img{transform:scale(1.04)}
+.card-body{padding:1.5rem}
+.card-body h3{font-size:1.05rem;color:var(--forest);margin-bottom:.55rem}
+.card-body p{font-size:.85rem;color:var(--mid);line-height:1.7;margin-bottom:1rem}
+.card-icon{width:42px;height:42px;background:var(--sage-bg);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;margin-bottom:.9rem;transition:background var(--trans)}
+.card:hover .card-icon{background:rgba(0,99,91,.1)}
+.card-icon svg{width:20px;height:20px;stroke:var(--teal);fill:none;stroke-width:1.8}
+
+/* ---- COVERAGE ITEMS ---- */
+.cov-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:.55rem;margin-top:1.4rem}
+.cov-item{display:flex;align-items:center;gap:.55rem;padding:.55rem .85rem;background:#fff;border:1px solid var(--border);border-radius:var(--radius);font-size:.83rem;color:var(--charcoal);transition:border-color var(--trans),background var(--trans)}
+.cov-item:hover{border-color:var(--teal);background:rgba(0,99,91,.04)}
+.cov-item::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--teal);flex-shrink:0}
+
+/* ---- ROOTS / HERITAGE ---- */
+.roots-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:5rem;align-items:start}
+.roots-imgs{position:relative;height:500px}
+.roots-main{width:73%;height:370px;object-fit:cover;border-radius:var(--radius);position:absolute;bottom:0;left:0;box-shadow:var(--sh-xl);transition:transform .5s ease}
+.roots-main:hover{transform:scale(1.02)}
+.roots-accent{width:53%;height:250px;object-fit:cover;border-radius:var(--radius);position:absolute;top:0;right:0;box-shadow:var(--sh-xl);border:4px solid var(--cream);transition:transform .5s ease}
+.roots-accent:hover{transform:scale(1.03)}
+.roots-text blockquote{font-family:var(--ff-serif);font-size:1.22rem;font-style:italic;color:var(--forest);border-left:3px solid var(--gold);padding-left:1.1rem;margin:1.4rem 0;line-height:1.6}
+.roots-text p{color:var(--mid);margin-bottom:1.05rem;line-height:1.75}
+
+/* ---- TIMELINE ---- */
+.tl{position:relative;padding-left:2.3rem;margin-top:1.8rem}
+.tl::before{content:"";position:absolute;left:8px;top:.4rem;bottom:0;width:1.5px;background:linear-gradient(to bottom,var(--teal),var(--sage) 80%,transparent)}
+.tl-item{position:relative;margin-bottom:2.2rem;opacity:0;transform:translateX(-12px);transition:opacity .5s ease,transform .5s ease}
+.tl-item.vis{opacity:1;transform:none}
+.tl-item::before{content:"";position:absolute;left:-2rem;top:.35rem;width:13px;height:13px;border-radius:50%;background:var(--teal);border:2.5px solid var(--cream);box-shadow:0 0 0 3px rgba(0,99,91,.2)}
+.tl-yr{font-size:.67rem;font-weight:700;letter-spacing:.12em;color:var(--teal);text-transform:uppercase;margin-bottom:.28rem}
+.tl-item h4{font-size:1rem;color:var(--forest);margin-bottom:.32rem}
+.tl-item p{font-size:.84rem;color:var(--mid);line-height:1.68}
+
+/* ---- LOSS CONTROL ---- */
+.lc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.lc-card{background:rgba(255,255,255,.06);border:1px solid rgba(183,205,194,.16);border-radius:var(--radius);padding:1.7rem;transition:background var(--trans),border-color var(--trans),transform var(--trans)}
+.lc-card:hover{background:rgba(255,255,255,.1);border-color:rgba(183,205,194,.35);transform:translateY(-2px)}
+.lc-num{font-family:var(--ff-serif);font-size:1.7rem;color:var(--sage);opacity:.4;margin-bottom:.55rem;line-height:1}
+.lc-card h3{font-size:.96rem;color:#fff;margin-bottom:.58rem}
+.lc-card p{font-size:.82rem;color:rgba(255,255,255,.6);line-height:1.68}
+
+/* ---- SUMMIT ---- */
+.countdown{display:flex;gap:1.2rem;margin:1.8rem 0;flex-wrap:wrap}
+.cd-unit{text-align:center;background:rgba(255,255,255,.07);border:1px solid rgba(183,205,194,.18);border-radius:var(--radius);padding:.9rem 1.3rem;min-width:76px;transition:background var(--trans)}
+.cd-unit:hover{background:rgba(255,255,255,.12)}
+.cd-num{font-family:var(--ff-serif);font-size:2.2rem;font-weight:700;color:#fff;line-height:1;transition:color var(--trans)}
+.cd-lbl{font-size:.63rem;color:var(--sage);text-transform:uppercase;letter-spacing:.1em;margin-top:.26rem}
+.sched{width:100%;border-collapse:collapse;font-size:.85rem}
+.sched thead th{background:var(--forest);color:var(--sage);padding:.75rem 1rem;text-align:left;font-size:.7rem;letter-spacing:.09em;text-transform:uppercase;font-weight:600}
+.sched tbody td{padding:.75rem 1rem;border-bottom:1px solid var(--border);vertical-align:top;color:var(--charcoal)}
+.sched tbody tr:nth-child(even) td{background:var(--sage-bg)}
+.sched td.t{font-weight:700;color:var(--teal);white-space:nowrap;width:105px}
+.sb-k{display:inline-block;font-size:.64rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:.13rem .5rem;border-radius:2px;margin-right:.4rem;background:var(--forest);color:var(--sage)}
+.sb-s{display:inline-block;font-size:.64rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:.13rem .5rem;border-radius:2px;margin-right:.4rem;background:var(--teal);color:#fff}
+.sb-b{display:inline-block;font-size:.64rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:.13rem .5rem;border-radius:2px;margin-right:.4rem;background:var(--sage-bg);color:var(--mid)}
+.sb-o{display:inline-block;font-size:.64rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:.13rem .5rem;border-radius:2px;margin-right:.4rem;background:var(--gold-lt);color:var(--forest)}
+
+/* ---- SVG MAP ---- */
+.map-wrap{background:var(--dark);padding:4.5rem 2rem}
+.map-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr;gap:3.5rem;align-items:start}
+.map-dot{cursor:pointer;transition:opacity var(--trans)}
+.map-dot:hover{opacity:.75}
+.loc-cards{display:flex;flex-direction:column;gap:.85rem}
+.loc-card{background:rgba(255,255,255,.05);border:1px solid rgba(183,205,194,.13);border-radius:var(--radius);padding:1.1rem 1.3rem;transition:background var(--trans),border-color var(--trans),transform var(--trans)}
+.loc-card:hover{background:rgba(255,255,255,.09);border-color:rgba(0,99,91,.35);transform:translateX(3px)}
+.loc-card h4{color:var(--sage);font-size:.89rem;margin-bottom:.26rem;font-family:var(--ff-sans);font-weight:600}
+.loc-card p{color:rgba(255,255,255,.48);font-size:.79rem;line-height:1.52}
+.loc-card a{color:var(--gold);font-size:.76rem;font-weight:600;margin-top:.38rem;display:inline-block;text-decoration:underline;text-underline-offset:2px;transition:color var(--trans)}
+.loc-card a:hover{color:#d4aa4c}
+
+/* ---- PHOTO BANNER ---- */
+.pbanner{height:290px;background-size:cover;background-position:center;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.pbanner::after{content:"";position:absolute;inset:0;background:rgba(11,31,23,.62)}
+.pbanner-txt{position:relative;z-index:1;text-align:center;color:#fff;padding:1rem}
+.pbanner-txt .badge{color:var(--sage);justify-content:center}
+.pbanner-txt .badge::before{background:var(--sage)}
+.pbanner-txt h2{font-size:clamp(1.7rem,3.2vw,2.6rem);margin-top:.4rem;margin-bottom:.45rem}
+.pbanner-txt p{color:rgba(255,255,255,.78);font-size:.93rem}
+
+/* ---- FAQ ---- */
+.faq-list{margin-top:1.8rem;display:flex;flex-direction:column;gap:.62rem}
+.faq-item{border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:border-color var(--trans)}
+.faq-item.open{border-color:var(--teal)}
+.faq-q{width:100%;text-align:left;background:#fff;padding:.92rem 1.3rem;font-size:.89rem;font-weight:600;color:var(--forest);border:none;display:flex;justify-content:space-between;align-items:center;cursor:pointer;transition:background var(--trans)}
+.faq-q:hover{background:var(--sage-bg)}
+.faq-q svg{width:16px;height:16px;stroke:var(--teal);fill:none;stroke-width:2.2;transition:transform var(--trans);flex-shrink:0}
+.faq-item.open .faq-q svg{transform:rotate(180deg)}
+.faq-a{background:var(--sage-bg);padding:.92rem 1.3rem 1.1rem;font-size:.85rem;color:var(--mid);line-height:1.74;display:none}
+.faq-item.open .faq-a{display:block}
+
+/* ---- FORMS ---- */
+.form-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:2.1rem;box-shadow:var(--sh-sm)}
+.form-title{font-size:1.2rem;color:var(--forest);margin-bottom:.35rem}
+.form-desc{font-size:.83rem;color:var(--mid);margin-bottom:1.4rem;line-height:1.65}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+.form-group{margin-bottom:.88rem}
+.form-group label{display:block;font-size:.75rem;font-weight:600;color:var(--charcoal);margin-bottom:.3rem;letter-spacing:.03em}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:.6rem .88rem;border:1.5px solid var(--border);border-radius:var(--radius);font-family:var(--ff-sans);font-size:.86rem;color:var(--charcoal);background:#fff;transition:border-color var(--trans),box-shadow var(--trans)}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(0,99,91,.1)}
+.form-group textarea{resize:vertical;min-height:80px}
+.form-tabs{display:flex;border-bottom:2px solid var(--border);margin-bottom:1.8rem;overflow-x:auto;scrollbar-width:none}
+.form-tab{padding:.52rem 1.1rem;font-size:.8rem;font-weight:600;cursor:pointer;border:none;background:none;color:var(--mid);border-bottom:2.5px solid transparent;margin-bottom:-2px;white-space:nowrap;transition:color var(--trans),border-color var(--trans)}
+.form-tab.active,.form-tab:hover{color:var(--teal);border-bottom-color:var(--teal)}
+.form-success{text-align:center;padding:2.5rem 1.5rem}
+.form-success svg{width:52px;height:52px;stroke:var(--teal);fill:none;stroke-width:1.5;margin:0 auto 1rem}
+.form-success h3{font-size:1.35rem;color:var(--forest);margin-bottom:.55rem}
+.form-success p{color:var(--mid);font-size:.88rem}
+
+/* ---- CTA STRIPE ---- */
+.cta-stripe{background:var(--teal);padding:4rem 2rem;text-align:center;position:relative;overflow:hidden}
+.cta-stripe::before{content:"";position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E")}
+.cta-stripe h2{font-size:clamp(1.7rem,2.8vw,2.4rem);color:#fff;margin-bottom:.7rem;position:relative}
+.cta-stripe p{color:rgba(255,255,255,.8);font-size:.97rem;margin-bottom:2rem;max-width:500px;margin-left:auto;margin-right:auto;line-height:1.7;position:relative}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;position:relative}
+
+/* ---- REVEAL ANIMATIONS ---- */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease}
+.reveal.vis{opacity:1;transform:none}
+.reveal-left{opacity:0;transform:translateX(-28px);transition:opacity .65s ease,transform .65s ease}
+.reveal-left.vis{opacity:1;transform:none}
+.reveal-right{opacity:0;transform:translateX(28px);transition:opacity .65s ease,transform .65s ease}
+.reveal-right.vis{opacity:1;transform:none}
+
+/* ---- COUNTER ANIMATION ---- */
+@keyframes countUp{from{opacity:.3}to{opacity:1}}
+.counting{animation:countUp .3s ease}
+
+/* ---- FOOTER ---- */
+footer{background:var(--charcoal);color:rgba(255,255,255,.52);padding:4rem 2rem 2rem}
+.ft-in{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem}
+.ft-brand img{height:42px;filter:brightness(0) invert(1) opacity(.82);margin-bottom:.9rem}
+.ft-brand p{font-size:.8rem;line-height:1.74;max-width:260px}
+.ft-social{display:flex;gap:.7rem;margin-top:1.1rem;flex-wrap:wrap}
+.ft-social a{display:flex;align-items:center;gap:.26rem;font-size:.72rem;color:rgba(255,255,255,.42);transition:color var(--trans)}
+.ft-social a:hover{color:#fff}
+.ft-social svg{width:13px;height:13px;fill:currentColor}
+.ft-col h4{color:#fff;font-size:.79rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:.9rem}
+.ft-col ul{list-style:none}
+.ft-col li{margin-bottom:.44rem}
+.ft-col li a,.ft-col li span{font-size:.78rem;color:rgba(255,255,255,.42);cursor:pointer;transition:color var(--trans)}
+.ft-col li a:hover,.ft-col li span:hover{color:#fff}
+.ft-bottom{max-width:1200px;margin:2.2rem auto 0;padding-top:1.4rem;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;align-items:center;font-size:.71rem;color:rgba(255,255,255,.28);flex-wrap:wrap;gap:.5rem}
+.ft-bottom a{color:rgba(255,255,255,.28);transition:color var(--trans)}
+.ft-bottom a:hover{color:rgba(255,255,255,.6)}
+
+/* ---- TEAM PHOTO SECTION ---- */
+.team-banner{position:relative;height:420px;overflow:hidden}
+.team-banner img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;transition:transform 8s ease}
+.team-banner:hover img{transform:scale(1.03)}
+.team-banner::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(11,31,23,.75) 0%,transparent 55%)}
+.team-caption{position:absolute;bottom:2rem;left:0;right:0;text-align:center;color:#fff;z-index:1;padding:0 2rem}
+.team-caption h3{font-size:1.6rem;font-family:var(--ff-serif);margin-bottom:.4rem}
+.team-caption p{font-size:.88rem;color:rgba(255,255,255,.78)}
+
+/* ---- RESPONSIVE ---- */
+@media(max-width:1024px){
+  .hero{grid-template-columns:1fr}
+  .hero-photo{height:320px}
+  .hero-brand{padding:3.5rem 2.5rem}
+  .hero-seal{width:128px;height:128px}
+  .hero-seal img{height:104px}
+  .lc-grid{grid-template-columns:1fr 1fr}
+  .roots-grid{grid-template-columns:1fr;gap:3rem}
+  .roots-imgs{height:300px}
+  .split{grid-template-columns:1fr;gap:2.5rem}
+  .split-img img{height:280px}
+  .ft-in{grid-template-columns:1fr 1fr}
+}
+@media(max-width:860px){
+  .stats-row{grid-template-columns:1fr 1fr}
+  .map-grid{grid-template-columns:1fr}
+  .lc-grid{grid-template-columns:1fr}
+  .sec{padding:3.5rem 1.5rem}
+  .hero-creds{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+  .nav-in{padding:.5rem 1rem;gap:.55rem}
+  .nav-logo{height:38px}
+  .sec{padding:3rem 1rem}
+  .form-row{grid-template-columns:1fr}
+  .hero-brand{padding:2.5rem 1.4rem}
+  .hero-seal{width:104px;height:104px;margin-bottom:1rem}
+  .hero-seal img{height:84px}
+  .hero h1{font-size:1.72rem}
+  .hero-creds{grid-template-columns:1fr 1fr;gap:.55rem}
+  .countdown{gap:.55rem}
+  .cd-unit{min-width:60px;padding:.72rem .85rem}
+  .cd-num{font-size:1.7rem}
+  .stats-row{grid-template-columns:1fr 1fr}
+  .ft-in{grid-template-columns:1fr}
+  #topbar{display:none}
+  .hero-btns{flex-direction:column;gap:.7rem}
+  .hero-btns button{width:100%;text-align:center;justify-content:center}
+}
+[x-cloak]{display:none!important}
+</style>
+</head>
+<body x-data="sfApp()" x-init="init()" :class="{'scrolled':scrolled}">
+
+<!-- TOPBAR -->
+<div id="topbar">
+  <div class="tb-left">
+    <span>Moncks Corner, SC &nbsp;&bull;&nbsp; Summerville, SC &nbsp;&bull;&nbsp; Waycross, GA</span>
+    <a href="tel:+18437613999">(843) 761-3999 &mdash; Forestry Line</a>
+    <a href="tel:+18436280280">(843) 628-0280 &mdash; Commercial &amp; Personal</a>
+    <a href="mailto:info@swampfoxagency.com">info@swampfoxagency.com</a>
+  </div>
+  <div class="tb-right">
+    <a class="soc" href="https://www.facebook.com/Swamp-Fox-Agency-161794570507166/" target="_blank" rel="noopener" aria-label="Facebook">
+      <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>Facebook
+    </a>
+    <a class="soc" href="https://www.instagram.com/swampfoxagency/" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>Instagram
+    </a>
+    <a class="soc" href="https://www.linkedin.com/company/swamp-fox-agency" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn
+    </a>
+    <a class="soc" href="https://www.youtube.com/@swampfoxagency" target="_blank" rel="noopener" aria-label="YouTube">
+      <svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.4a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>YouTube
+    </a>
+  </div>
+</div>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <img src="images/sctpa-logo.png" alt="SCTPA Endorsed">
+  <span>The Only Endorsed Agency of the South Carolina Timber Producers Association &nbsp;&bull;&nbsp; Serving SC &amp; GA Since 1987</span>
+</div>
+
+<!-- NAV -->
+<nav id="nav" :class="{'scrolled':scrolled}">
+  <div class="nav-in">
+    <img src="images/swamp-fox-logo.webp" alt="Swamp Fox Agency" class="nav-logo" @click="go('home')">
+    <div class="nav-links">
+      <button class="nl" :class="tab==='home'?'active':''" @click="go('home')">Home</button>
+      <button class="nl" :class="tab==='services'?'active':''" @click="go('services')">Services</button>
+      <button class="nl" :class="tab==='losscontrol'?'active':''" @click="go('losscontrol')">Loss Control</button>
+      <button class="nl" :class="tab==='summit'?'active':''" @click="go('summit')">Summit 2026</button>
+      <button class="nl" :class="tab==='about'?'active':''" @click="go('about')">About</button>
+      <button class="nl" :class="tab==='locations'?'active':''" @click="go('locations')">Locations</button>
+    </div>
+    <button class="nav-cta" @click="go('quote')">Get a Quote</button>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HOME TAB
+     ============================================================ -->
+<div x-show="tab==='home'" x-cloak>
+
+  <!-- HERO: SPLIT PANEL -->
+  <section class="hero">
+    <div class="hero-brand">
+      <div class="hero-seal">
+        <img src="images/swamp-fox-logo.webp" alt="Swamp Fox Agency &mdash; Est. 1987">
+      </div>
+      <div class="hero-rule"></div>
+      <h1>From Forest<br><em>to Front Door.</em></h1>
+      <p class="hero-sub">South Carolina&rsquo;s authority in forestry, logging, trucking, and commercial insurance since 1987 &mdash; the only agency endorsed by the SC Timber Producers Association.</p>
+      <div class="hero-btns">
+        <button class="btn-hero" @click="go('quote')">Get a Quote</button>
+        <button class="btn-ghost" @click="go('services')">Our Coverages</button>
+      </div>
+      <div class="hero-creds">
+        <div class="hero-cred"><strong>Est. 1987</strong><span>Moncks Corner, SC</span></div>
+        <div class="hero-cred"><strong>SCTPA Endorsed</strong><span>Only Agency in SC</span></div>
+        <div class="hero-cred"><strong>4 Offices</strong><span>SC &amp; Georgia</span></div>
+        <div class="hero-cred"><strong>8 States</strong><span>Southeast Coverage</span></div>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200&q=85" alt="South Carolina longleaf pine timber country" loading="eager">
+      <div class="hero-tag">South Carolina Timber Country</div>
+    </div>
+  </section>
+
+  <!-- WHO WE INSURE STRIP -->
+  <div class="insure-strip">
+    <span class="in-lbl">Who We Insure</span>
+    <span class="in-tag">Timber Harvesters</span>
+    <span class="in-tag">Log Haulers &amp; Truckers</span>
+    <span class="in-tag">Land Clearing Operations</span>
+    <span class="in-tag">Commercial Businesses</span>
+    <span class="in-tag">Agricultural Operators</span>
+    <span class="in-tag">SC &amp; GA Homeowners</span>
+    <span class="in-tag">Contractors</span>
+  </div>
+
+  <!-- STATS -->
+  <section class="sec">
+    <div class="sec-in">
+      <div style="text-align:center;margin-bottom:1rem" class="reveal">
+        <p class="badge" style="justify-content:center">By the Numbers</p>
+        <h2 class="sec-title" style="text-align:center">A Track Record Built Over Decades</h2>
+      </div>
+      <div class="stats-row reveal">
+        <div class="stat-item">
+          <div class="stat-num" x-text="counts.years">0</div>
+          <div class="stat-lbl">Years in Business</div>
+          <div class="stat-sub">Est. 1987</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">4</div>
+          <div class="stat-lbl">Office Locations</div>
+          <div class="stat-sub">SC &amp; GA</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">8</div>
+          <div class="stat-lbl">States Served</div>
+          <div class="stat-sub">Southeast Coverage</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">#1</div>
+          <div class="stat-lbl">SCTPA Endorsed Agency</div>
+          <div class="stat-sub">South Carolina</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES OVERVIEW CARDS -->
+  <section class="sec bg-sage">
+    <div class="sec-in">
+      <div class="reveal">
+        <p class="badge">What We Cover</p>
+        <h2 class="sec-title">Built for the Industries We Serve</h2>
+        <p class="sec-sub">Generic insurance policies leave dangerous gaps for specialized operations. Every program we build is tailored to the actual exposures of your industry.</p>
+      </div>
+      <div class="card-grid">
+        <div class="card reveal">
+          <img class="card-img" src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=82" alt="South Carolina forestry operations">
+          <div class="card-body">
+            <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 22"/><path d="M9.5 9C12 7 17 7.5 18 12"/><path d="M13 12.5C16 10.5 18.5 11.5 19.5 15"/></svg></div>
+            <h3>Forestry &amp; Logging</h3>
+            <p>Loggers broad form, equipment floaters, workers&rsquo; comp, timber inland marine. Coverage built for timber country, written with carriers who understand it.</p>
+            <button class="btn btn-outline" @click="go('services')">View Coverage</button>
+          </div>
+        </div>
+        <div class="card reveal">
+          <img class="card-img" src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&q=82" alt="Commercial trucking log haulers South Carolina">
+          <div class="card-body">
+            <div class="card-icon"><svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+            <h3>Commercial Trucking</h3>
+            <p>Log truck fleets, motor truck cargo, bobtail, DOT compliance guidance. Your operation stays moving &mdash; we handle the risk behind it.</p>
+            <button class="btn btn-outline" @click="go('services')">View Coverage</button>
+          </div>
+        </div>
+        <div class="card reveal">
+          <img class="card-img" src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=82" alt="South Carolina commercial business insurance">
+          <div class="card-body">
+            <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+            <h3>Commercial Lines</h3>
+            <p>General liability, commercial property, BOP, workers&rsquo; comp, commercial auto, umbrella. Comprehensive programs for SC and GA businesses of every size.</p>
+            <button class="btn btn-outline" @click="go('services')">View Coverage</button>
+          </div>
+        </div>
+        <div class="card reveal">
+          <img class="card-img" src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600&q=82" alt="South Carolina home and auto insurance">
+          <div class="card-body">
+            <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+            <h3>Personal Lines</h3>
+            <p>Home, auto, umbrella, life, and renters insurance for Lowcountry families. We shop multiple carriers to find the right protection at the right price.</p>
+            <button class="btn btn-outline" @click="go('services')">View Coverage</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR ROOTS / HISTORY -->
+  <section class="sec bg-parch">
+    <div class="sec-in">
+      <div class="roots-grid">
+        <div class="roots-imgs reveal-left">
+          <img class="roots-main" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=700&q=82" alt="South Carolina Lowcountry landscape">
+          <img class="roots-accent" src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=500&q=82" alt="SC pine timber forest">
+        </div>
+        <div class="roots-text reveal-right">
+          <p class="badge">Our Roots</p>
+          <h2 class="sec-title">Born in the Lowcountry. Built for the People Who Work It.</h2>
+          <blockquote>&ldquo;We sit across the table from you, learn your operation, and tell you what coverage gaps you actually have.&rdquo;</blockquote>
+          <p>Swamp Fox Agency was founded in Moncks Corner, South Carolina in 1987 with a mission that has never changed: provide honest, expert insurance counsel to the families, farmers, loggers, and business owners who built this region.</p>
+          <p>For nearly four decades we have done exactly that. We are the only agency endorsed by the South Carolina Timber Producers Association &mdash; a distinction earned through consistent expertise in the unique risks of the timber and trucking industries.</p>
+          <p>When a claim happens, we answer the phone. We fight for you. That is not a tagline. It is the daily practice of every agent at Swamp Fox.</p>
+          <div class="tl">
+            <div class="tl-item">
+              <div class="tl-yr">1987</div>
+              <h4>Founded in Moncks Corner</h4>
+              <p>Swamp Fox Agency opens its doors on Pinopolis Road, focused on the forestry and agricultural communities of Berkeley County.</p>
+            </div>
+            <div class="tl-item">
+              <div class="tl-yr">1990s</div>
+              <h4>SCTPA Endorsement</h4>
+              <p>Named the only endorsed agency of the South Carolina Timber Producers Association &mdash; a relationship built on genuine expertise in logging and timber risk.</p>
+            </div>
+            <div class="tl-item">
+              <div class="tl-yr">2000s</div>
+              <h4>Expanded to Summerville &amp; Georgia</h4>
+              <p>Growing client demand leads to new offices in Summerville, SC and Waycross, GA, extending coverage across the Southeast.</p>
+            </div>
+            <div class="tl-item">
+              <div class="tl-yr">2010s</div>
+              <h4>Swamp Fox Scholarship &amp; Pinnacle Award</h4>
+              <p>Launched the Swamp Fox Scholarship for Lowcountry students and the Pinnacle Award recognizing outstanding timber industry leaders.</p>
+            </div>
+            <div class="tl-item">
+              <div class="tl-yr">Today</div>
+              <h4>Four Offices, Eight States</h4>
+              <p>Four offices, licensed across eight southeastern states, and still the only SCTPA-endorsed agency in South Carolina.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOSS CONTROL PROMO -->
+  <section class="sec bg-forest">
+    <div class="sec-in">
+      <div class="split">
+        <div class="reveal-left">
+          <p class="badge">Industry-Leading Service</p>
+          <h2 class="sec-title">Loss Control That Actually Reduces Claims</h2>
+          <p style="color:rgba(255,255,255,.7);line-height:1.75;margin-bottom:1.1rem">Most agencies sell a policy and move on. Swamp Fox deploys trained loss control professionals into the field &mdash; conducting site audits, safety assessments, and driver qualification reviews that directly reduce your claim frequency and lower your premium over time.</p>
+          <p style="color:rgba(255,255,255,.7);line-height:1.75;margin-bottom:1.8rem">This is the service that separates a specialist from a generalist. When your carrier sees a well-managed operation backed by documented safety practices, they price it accordingly.</p>
+          <div style="display:flex;gap:.9rem;flex-wrap:wrap">
+            <button class="btn btn-gold btn-lg" @click="go('losscontrol')">Explore Loss Control</button>
+            <button class="btn btn-white btn-lg" @click="go('quote')">Request a Consultation</button>
+          </div>
+        </div>
+        <div class="split-img reveal-right">
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=82" alt="Loss control safety inspection South Carolina">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec">
+    <div class="sec-in">
+      <div class="reveal" style="text-align:center;margin-bottom:2.5rem">
+        <p class="badge" style="justify-content:center">Common Questions</p>
+        <h2 class="sec-title" style="text-align:center">What You Need to Know</h2>
+      </div>
+      <div class="faq-list" style="max-width:780px;margin:0 auto">
+        <div class="faq-item" id="faq1">
+          <button class="faq-q" onclick="toggleFaq('faq1')">
+            What makes Swamp Fox Agency different from other insurance agencies in South Carolina?
+            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a">Swamp Fox Agency is the only insurance agency in South Carolina endorsed by the South Carolina Timber Producers Association. That endorsement reflects nearly four decades of focused expertise in forestry, logging, and trucking insurance. We are not generalists who occasionally write a logging policy &mdash; this is our core business. Our agents understand loss runs, DOT compliance, equipment valuations, and timber operations in ways that standard agencies do not.</div>
+        </div>
+        <div class="faq-item" id="faq2">
+          <button class="faq-q" onclick="toggleFaq('faq2')">
+            Do you only cover logging and forestry businesses?
+            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a">No. While we are the regional authority in forestry and trucking insurance, we provide full commercial and personal lines coverage for businesses and families across SC and GA. That includes general liability, commercial property, business owners policies, workers&rsquo; compensation, home, auto, and umbrella coverage. If you have an insurance need in the Southeast, we can address it.</div>
+        </div>
+        <div class="faq-item" id="faq3">
+          <button class="faq-q" onclick="toggleFaq('faq3')">
+            What states does Swamp Fox Agency serve?
+            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a">Our agents are licensed to write coverage in South Carolina, Georgia, North Carolina, Virginia, Florida, Alabama, Mississippi, and Tennessee &mdash; eight southeastern states in total. Our four offices are located in Moncks Corner (main), a second Moncks Corner location on Hwy 52, Summerville, SC, and Waycross, GA.</div>
+        </div>
+        <div class="faq-item" id="faq4">
+          <button class="faq-q" onclick="toggleFaq('faq4')">
+            What is loss control and why does it matter for my logging operation?
+            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a">Loss control is a proactive risk management service where trained professionals evaluate your operation for safety gaps, DOT compliance issues, driver qualifications, and equipment condition. For logging and trucking operations, documented loss control programs directly influence how carriers price your coverage. A well-run operation with recorded safety practices earns better rates and better claim outcomes. Swamp Fox provides this service as part of our commitment to long-term client relationships.</div>
+        </div>
+        <div class="faq-item" id="faq5">
+          <button class="faq-q" onclick="toggleFaq('faq5')">
+            How do I get a quote for logging or trucking insurance?
+            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a">Use the Get a Quote button at the top of this page or call us directly at (843) 761-3999 for forestry and trucking inquiries, or (843) 628-0280 for commercial and personal lines. A licensed agent will gather the information needed to produce an accurate, detailed quote &mdash; not a rough estimate. We typically respond within one business day.</div>
+        </div>
+        <div class="faq-item" id="faq6">
+          <button class="faq-q" onclick="toggleFaq('faq6')">
+            What is the Swamp Fox Summit 2026?
+            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a">The Swamp Fox Summit is an annual industry conference for timber, logging, and trucking professionals in the Southeast. It brings together operators, underwriters, safety professionals, and industry leaders for a full day of sessions on risk management, regulatory compliance, market conditions, and best practices. The 2026 Summit is scheduled for September 15. Registration is open and space is limited.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA STRIPE -->
+  <div class="cta-stripe">
+    <h2>Ready to Talk Coverage?</h2>
+    <p>Our licensed agents respond within one business day. Every inquiry is handled by a real person at one of our four offices &mdash; not a call center.</p>
+    <div class="cta-btns">
+      <button class="btn btn-gold btn-lg" @click="go('quote')">Get a Quote</button>
+      <a href="tel:+18437613999" class="btn btn-white btn-lg">(843) 761-3999</a>
+    </div>
+  </div>
+
+</div><!-- end HOME -->
+
+<!-- ============================================================
+     SERVICES TAB
+     ============================================================ -->
+<div x-show="tab==='services'" x-cloak>
+  <div class="pbanner" style="background-image:url('https://images.unsplash.com/photo-1448375240586-882707db888b?w=1400&q=85')">
+    <div class="pbanner-txt">
+      <p class="badge">Complete Coverage</p>
+      <h2>Insurance Services</h2>
+      <p>Forestry &bull; Trucking &bull; Commercial &bull; Personal Lines</p>
+    </div>
+  </div>
+
+  <!-- FORESTRY & LOGGING -->
+  <section class="sec">
+    <div class="sec-in">
+      <div class="split">
+        <div class="split-text reveal-left">
+          <p class="badge">Industry Specialists</p>
+          <h2 class="sec-title">Forestry &amp; Logging Insurance</h2>
+          <p>Swamp Fox Agency is the only SCTPA-endorsed insurance agency in South Carolina. That distinction reflects 37 years of focused expertise in timber harvesting, log hauling, and the unique liability exposures of forestry operations.</p>
+          <p>Standard commercial policies create dangerous gaps for logging operations. We write with carriers who specialize in forestry risk, price it accurately, and settle claims without the delays that come from carriers unfamiliar with how a log yard or a skidder operation actually works.</p>
+          <p>If you are running timber in South Carolina or Georgia, you need an agency that has reviewed more logging loss runs, more motor carrier files, and more equipment schedules than any generalist in the state. That is Swamp Fox.</p>
+          <button class="btn btn-primary btn-lg" @click="go('quote')">Request a Forestry Quote</button>
+        </div>
+        <div class="split-img reveal-right">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=700&q=82" alt="South Carolina pine forest logging operations">
+        </div>
+      </div>
+      <div style="margin-top:3rem" class="reveal">
+        <h3 style="font-size:.95rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--teal);margin-bottom:1rem">Forestry &amp; Logging Coverage Lines</h3>
+        <div class="cov-grid">
+          <div class="cov-item">Loggers Broad Form Liability</div>
+          <div class="cov-item">Motor Truck Cargo</div>
+          <div class="cov-item">Commercial Auto &mdash; Log Trucks</div>
+          <div class="cov-item">Physical Damage &mdash; Equipment</div>
+          <div class="cov-item">Workers&rsquo; Compensation &mdash; Logging</div>
+          <div class="cov-item">Timber Inland Marine</div>
+          <div class="cov-item">Tools &amp; Equipment Floater</div>
+          <div class="cov-item">Contractor&rsquo;s Equipment Coverage</div>
+          <div class="cov-item">Pollution Liability</div>
+          <div class="cov-item">Commercial Umbrella / Excess</div>
+          <div class="cov-item">DOT Compliance Guidance</div>
+          <div class="cov-item">Bobtail / Non-Trucking Liability</div>
+          <div class="cov-item">Forest Fire Liability</div>
+          <div class="cov-item">General Liability &mdash; Land Clearing</div>
+          <div class="cov-item">Hired &amp; Non-Owned Auto</div>
+          <div class="cov-item">Skidder &amp; Feller Buncher Coverage</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMERCIAL TRUCKING -->
+  <section class="sec bg-sage">
+    <div class="sec-in">
+      <div class="split">
+        <div class="split-img reveal-left">
+          <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=700&q=82" alt="Commercial log truck hauling South Carolina highway">
+        </div>
+        <div class="split-text reveal-right">
+          <p class="badge">Motor Carrier Specialists</p>
+          <h2 class="sec-title">Commercial Trucking Insurance</h2>
+          <p>From single log trucks to full fleets, Swamp Fox Agency writes commercial trucking coverage that meets DOT requirements, protects your cargo, and keeps your operation moving after a loss.</p>
+          <p>We understand the nuances of motor carrier filing, driver qualification files, ELD compliance, and the leased vs. owner-operator relationship. When you call us with a claim or a coverage question, you talk to someone who knows what a bobtail situation actually means.</p>
+          <p>Our trucking programs are built around your actual exposure &mdash; not a template policy from a carrier that has never seen a log yard.</p>
+          <button class="btn btn-primary btn-lg" @click="go('quote')">Request a Trucking Quote</button>
+        </div>
+      </div>
+      <div style="margin-top:3rem" class="reveal">
+        <h3 style="font-size:.95rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--teal);margin-bottom:1rem">Trucking Coverage Lines</h3>
+        <div class="cov-grid">
+          <div class="cov-item">Truckers Auto Liability</div>
+          <div class="cov-item">Motor Truck Cargo</div>
+          <div class="cov-item">Physical Damage &mdash; Tractor &amp; Trailer</div>
+          <div class="cov-item">Bobtail / Non-Trucking Liability</div>
+          <div class="cov-item">Occupational Accident</div>
+          <div class="cov-item">General Liability &mdash; Carrier</div>
+          <div class="cov-item">Workers&rsquo; Compensation</div>
+          <div class="cov-item">MCS-90 Endorsement</div>
+          <div class="cov-item">Hired &amp; Non-Owned Auto</div>
+          <div class="cov-item">Contingent Cargo</div>
+          <div class="cov-item">Fleet Safety Programs</div>
+          <div class="cov-item">Driver Qualification File Review</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMERCIAL LINES -->
+  <section class="sec">
+    <div class="sec-in">
+      <div class="split">
+        <div class="split-text reveal-left">
+          <p class="badge">Commercial Lines</p>
+          <h2 class="sec-title">Coverage That Works as Hard as You Do</h2>
+          <p>Whether you operate a contracting company, retail business, agricultural operation, or professional services firm in South Carolina or Georgia, Swamp Fox builds a commercial insurance program around your actual exposures &mdash; not a standard template.</p>
+          <p>We represent multiple admitted and specialty carriers, which means we shop your account to find the right combination of coverage and cost. We also identify the gaps that standard policies miss and address them before a claim makes them visible.</p>
+          <button class="btn btn-primary btn-lg" @click="go('quote')">Get a Commercial Quote</button>
+        </div>
+        <div class="split-img reveal-right">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=82" alt="South Carolina commercial business insurance">
+        </div>
+      </div>
+      <div style="margin-top:3rem" class="reveal">
+        <h3 style="font-size:.95rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--teal);margin-bottom:1rem">Commercial Coverage Lines</h3>
+        <div class="cov-grid">
+          <div class="cov-item">General Liability</div>
+          <div class="cov-item">Commercial Property</div>
+          <div class="cov-item">Business Owners Policy (BOP)</div>
+          <div class="cov-item">Commercial Auto</div>
+          <div class="cov-item">Workers&rsquo; Compensation</div>
+          <div class="cov-item">Commercial Umbrella / Excess</div>
+          <div class="cov-item">Inland Marine</div>
+          <div class="cov-item">Professional Liability (E&amp;O)</div>
+          <div class="cov-item">Directors &amp; Officers Liability</div>
+          <div class="cov-item">Cyber Liability</div>
+          <div class="cov-item">Employment Practices Liability</div>
+          <div class="cov-item">Farm &amp; Agriculture Programs</div>
+          <div class="cov-item">Contractors General Liability</div>
+          <div class="cov-item">Builders Risk</div>
+          <div class="cov-item">Commercial Flood</div>
+          <div class="cov-item">Product Liability</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERSONAL LINES -->
+  <section class="sec bg-parch">
+    <div class="sec-in">
+      <div class="split">
+        <div class="split-img reveal-left">
+          <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=700&q=82" alt="South Carolina home insurance">
+        </div>
+        <div class="split-text reveal-right">
+          <p class="badge">Personal Lines</p>
+          <h2 class="sec-title">Protecting the Things That Matter Most</h2>
+          <p>Your home, your vehicles, your family&rsquo;s financial future. Swamp Fox Agency&rsquo;s personal lines team shops multiple carriers to find the right balance of protection and cost for Lowcountry families.</p>
+          <p>We do not just quote the minimum. We review your actual situation &mdash; your home&rsquo;s replacement cost, your auto liability limits, your umbrella exposure &mdash; and build coverage that holds up when you need it.</p>
+          <p>When a claim occurs, we become your advocate, working with carriers to ensure fair, prompt resolution and that every applicable coverage is applied correctly.</p>
+          <button class="btn btn-primary btn-lg" @click="go('quote')">Get a Personal Lines Quote</button>
+        </div>
+      </div>
+      <div style="margin-top:3rem" class="reveal">
+        <h3 style="font-size:.95rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--teal);margin-bottom:1rem">Personal Coverage Lines</h3>
+        <div class="cov-grid">
+          <div class="cov-item">Homeowners Insurance</div>
+          <div class="cov-item">Personal Auto</div>
+          <div class="cov-item">Personal Umbrella</div>
+          <div class="cov-item">Renters Insurance</div>
+          <div class="cov-item">Life Insurance</div>
+          <div class="cov-item">Flood Insurance (NFIP &amp; Private)</div>
+          <div class="cov-item">Boat &amp; Watercraft</div>
+          <div class="cov-item">RV &amp; Motorcycle</div>
+          <div class="cov-item">Jewelry &amp; Valuables Floater</div>
+          <div class="cov-item">Identity Theft Protection</div>
+          <div class="cov-item">Vacant &amp; Secondary Homes</div>
+          <div class="cov-item">High-Value Home Programs</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-stripe">
+    <h2>Not Sure What You Need?</h2>
+    <p>Our agents will review your current coverage, identify gaps, and recommend a program built around your actual operation &mdash; at no obligation.</p>
+    <div class="cta-btns">
+      <button class="btn btn-gold btn-lg" @click="go('quote')">Start with a Free Review</button>
+      <a href="tel:+18437613999" class="btn btn-white btn-lg">(843) 761-3999</a>
+    </div>
+  </div>
+</div><!-- end SERVICES -->
+
+<!-- ============================================================
+     LOSS CONTROL TAB
+     ============================================================ -->
+<div x-show="tab==='losscontrol'" x-cloak>
+  <div class="pbanner" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1400&q=85')">
+    <div class="pbanner-txt">
+      <p class="badge">Risk Management</p>
+      <h2>Loss Control Services</h2>
+      <p>Proactive safety programs that reduce claims and lower your premium</p>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <section class="sec">
+    <div class="sec-in">
+      <div class="split">
+        <div class="split-text reveal-left">
+          <p class="badge">What Is Loss Control</p>
+          <h2 class="sec-title">Fewer Claims. Lower Premiums. A Safer Operation.</h2>
+          <p>Loss control is a proactive risk management service where trained professionals evaluate your business for safety gaps, compliance issues, and operational vulnerabilities before they become claims.</p>
+          <p>For logging and trucking operations, documented loss control programs directly influence how carriers price your coverage. A well-managed operation with recorded safety practices earns better rates, better terms, and better claim outcomes.</p>
+          <p>Most agencies deliver a policy and stop there. Swamp Fox deploys loss control professionals into the field &mdash; your yard, your trucks, your worksite &mdash; to identify the exposures a desk review will never catch.</p>
+          <div style="display:flex;gap:.9rem;flex-wrap:wrap;margin-top:1.5rem">
+            <button class="btn btn-primary btn-lg" @click="go('quote'); setTimeout(()=>document.querySelector('[data-form=lc]')?.click(),200)">Request a Consultation</button>
+            <a href="tel:+18437613999" class="btn btn-outline btn-lg">(843) 761-3999</a>
+          </div>
+        </div>
+        <div class="split-img reveal-right">
+          <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=700&q=82" alt="Safety inspection loss control South Carolina">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES GRID -->
+  <section class="sec bg-forest">
+    <div class="sec-in">
+      <div style="text-align:center;margin-bottom:2.5rem" class="reveal">
+        <p class="badge" style="justify-content:center">Our Services</p>
+        <h2 class="sec-title" style="text-align:center">What Our Loss Control Team Does</h2>
+        <p class="sec-sub" style="text-align:center;margin:0 auto">Six core services deployed to reduce your exposure, improve your safety record, and demonstrate to your carrier that your operation is well-managed.</p>
+      </div>
+      <div class="lc-grid">
+        <div class="lc-card reveal">
+          <div class="lc-num">01</div>
+          <h3>Worksite Safety Audits</h3>
+          <p>On-site evaluation of logging operations, equipment yards, and work zones. We identify OSHA compliance issues, equipment hazards, and procedural gaps before a claim exposes them.</p>
+        </div>
+        <div class="lc-card reveal">
+          <div class="lc-num">02</div>
+          <h3>Driver Qualification Reviews</h3>
+          <p>Full review of DQ files for commercial drivers &mdash; MVR checks, medical certificates, hours-of-service logs, and drug/alcohol testing documentation. FMCSA compliance from the ground up.</p>
+        </div>
+        <div class="lc-card reveal">
+          <div class="lc-num">03</div>
+          <h3>Fleet &amp; Equipment Inspections</h3>
+          <p>Physical inspection of trucks, trailers, skidders, feller bunchers, and other equipment. Condition reports submitted to carriers as evidence of a well-maintained operation.</p>
+        </div>
+        <div class="lc-card reveal">
+          <div class="lc-num">04</div>
+          <h3>Safety Program Development</h3>
+          <p>We help build or improve written safety programs tailored to your operation. Documented programs are a carrier requirement for preferred pricing and critical evidence in the event of a serious loss.</p>
+        </div>
+        <div class="lc-card reveal">
+          <div class="lc-num">05</div>
+          <h3>Claims Trend Analysis</h3>
+          <p>Review of your loss history to identify frequency patterns, root causes, and corrective actions. Understanding why claims are occurring is the first step to stopping them.</p>
+        </div>
+        <div class="lc-card reveal">
+          <div class="lc-num">06</div>
+          <h3>DOT &amp; Regulatory Compliance</h3>
+          <p>Review of DOT operating authority, carrier registration, IFTA, and state-specific compliance requirements. We keep your operation legal and your premiums from being compromised by compliance gaps.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOSS CONTROL CONSULTATION FORM -->
+  <section class="sec bg-sage" id="lc-form">
+    <div class="sec-in" style="max-width:760px">
+      <div class="reveal" style="text-align:center;margin-bottom:2rem">
+        <p class="badge" style="justify-content:center">Schedule a Visit</p>
+        <h2 class="sec-title" style="text-align:center">Request a Loss Control Consultation</h2>
+        <p style="color:var(--mid);text-align:center;line-height:1.7">Complete the form below. A Swamp Fox loss control specialist will contact you within one business day to schedule an on-site evaluation.</p>
+      </div>
+      <div class="form-card reveal">
+        <div x-show="!submitted.lc">
+          <h3 class="form-title">Loss Control Consultation Request</h3>
+          <p class="form-desc">Fields marked * are required. All information is kept confidential and used only to prepare your consultation.</p>
+          <form @submit.prevent="submitForm('lc')">
+            <div class="form-row">
+              <div class="form-group"><label>First Name *</label><input type="text" placeholder="First name" required></div>
+              <div class="form-group"><label>Last Name *</label><input type="text" placeholder="Last name" required></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label>Company / Operation Name *</label><input type="text" placeholder="Business name" required></div>
+              <div class="form-group"><label>Phone Number *</label><input type="tel" placeholder="(843) 000-0000" required></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label>Email Address *</label><input type="email" placeholder="you@email.com" required></div>
+              <div class="form-group"><label>State of Operation *</label>
+                <select required>
+                  <option value="">Select state...</option>
+                  <option>South Carolina</option><option>Georgia</option><option>North Carolina</option>
+                  <option>Virginia</option><option>Florida</option><option>Alabama</option>
+                  <option>Mississippi</option><option>Tennessee</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Type of Operation *</label>
+              <select required>
+                <option value="">Select operation type...</option>
+                <option>Logging / Timber Harvesting</option>
+                <option>Log Hauling / Trucking</option>
+                <option>Land Clearing</option>
+                <option>Sawmill / Processing</option>
+                <option>General Contractor</option>
+                <option>Other Commercial</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Number of Employees / Drivers</label>
+              <select>
+                <option value="">Select range...</option>
+                <option>1 &ndash; 5</option><option>6 &ndash; 15</option>
+                <option>16 &ndash; 30</option><option>31 &ndash; 50</option><option>50+</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Describe Your Primary Safety Concerns or Goals</label>
+              <textarea placeholder="E.g. reducing workers' comp frequency, DOT compliance review, fleet safety improvement..."></textarea>
+            </div>
+            <div class="form-group" style="margin-top:.5rem">
+              <button type="submit" class="btn btn-primary btn-lg" style="width:100%">Request Consultation</button>
+            </div>
+          </form>
+        </div>
+        <div x-show="submitted.lc" class="form-success">
+          <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <h3>Consultation Request Received</h3>
+          <p>A Swamp Fox loss control specialist will contact you within one business day. If your need is urgent, call us directly at (843) 761-3999.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- end LOSS CONTROL -->
+
+<!-- ============================================================
+     SUMMIT 2026 TAB
+     ============================================================ -->
+<div x-show="tab==='summit'" x-cloak>
+  <div class="pbanner" style="background-image:url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400&q=85')">
+    <div class="pbanner-txt">
+      <p class="badge">Annual Industry Event</p>
+      <h2>Swamp Fox Summit 2026</h2>
+      <p>The Southeast&rsquo;s Premier Forestry &amp; Trucking Risk Conference</p>
+    </div>
+  </div>
+
+  <!-- SUMMIT OVERVIEW + COUNTDOWN -->
+  <section class="sec bg-forest">
+    <div class="sec-in">
+      <div class="split">
+        <div class="reveal-left">
+          <p class="badge">September 15, 2026</p>
+          <h2 class="sec-title">The Southeast&rsquo;s Forestry &amp; Insurance Summit</h2>
+          <p style="color:rgba(255,255,255,.72);line-height:1.75;margin-bottom:1rem">The Swamp Fox Summit brings together timber operators, log haulers, underwriters, safety professionals, and industry leaders for a full day of focused sessions on risk management, regulatory compliance, market conditions, and best practices.</p>
+          <p style="color:rgba(255,255,255,.72);line-height:1.75;margin-bottom:1.6rem">This is not a sales event. It is a working conference designed to help operators run safer, more compliant, and more profitable operations. Attendance is limited to ensure the quality of discussion.</p>
+          <div style="display:flex;gap:.9rem;flex-wrap:wrap">
+            <button class="btn btn-gold btn-lg" onclick="document.getElementById('summit-reg').scrollIntoView({behavior:'smooth'})">Register Now</button>
+            <a href="tel:+18437613999" class="btn btn-white btn-lg">Call for Info</a>
+          </div>
+          <div class="countdown" x-data x-init="$watch">
+            <div class="cd-unit"><div class="cd-num" x-text="countdown.d">--</div><div class="cd-lbl">Days</div></div>
+            <div class="cd-unit"><div class="cd-num" x-text="countdown.h">--</div><div class="cd-lbl">Hours</div></div>
+            <div class="cd-unit"><div class="cd-num" x-text="countdown.m">--</div><div class="cd-lbl">Min</div></div>
+            <div class="cd-unit"><div class="cd-num" x-text="countdown.s">--</div><div class="cd-lbl">Sec</div></div>
+          </div>
+        </div>
+        <div class="split-img reveal-right">
+          <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=700&q=82" alt="Industry conference Swamp Fox Summit 2026">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section class="sec">
+    <div class="sec-in">
+      <div class="reveal" style="text-align:center;margin-bottom:2.5rem">
+        <p class="badge" style="justify-content:center">Full Day Agenda</p>
+        <h2 class="sec-title" style="text-align:center">Summit 2026 Schedule</h2>
+        <p style="color:var(--mid);text-align:center;max-width:540px;margin:0 auto;line-height:1.7">September 15, 2026 &bull; Moncks Corner, SC &bull; Doors open at 8:00 AM</p>
+      </div>
+      <div class="reveal" style="overflow-x:auto">
+        <table class="sched">
+          <thead><tr><th>Time</th><th>Session</th><th>Details</th></tr></thead>
+          <tbody>
+            <tr><td class="t">8:00 AM</td><td><span class="sb-b">Registration</span>Check-In &amp; Networking</td><td>Registration desk opens. Continental breakfast served. Networking with exhibitors and sponsors.</td></tr>
+            <tr><td class="t">9:00 AM</td><td><span class="sb-k">Keynote</span>Opening Address</td><td>Welcome from Swamp Fox Agency leadership. State of the SE timber and trucking insurance market &mdash; 2026 outlook.</td></tr>
+            <tr><td class="t">9:45 AM</td><td><span class="sb-s">Session 1</span>Market Conditions</td><td>Forestry &amp; trucking insurance market update. Carrier appetite shifts, rate trends, and what operators can expect in renewal season.</td></tr>
+            <tr><td class="t">10:30 AM</td><td><span class="sb-b">Break</span></td><td>Refreshments. Visit exhibitor tables.</td></tr>
+            <tr><td class="t">10:45 AM</td><td><span class="sb-s">Session 2</span>DOT &amp; FMCSA Compliance</td><td>2026 regulatory updates affecting log haulers and motor carriers. ELD enforcement, drug testing clearinghouse, and CSA scoring.</td></tr>
+            <tr><td class="t">11:45 AM</td><td><span class="sb-s">Session 3</span>Workers&rsquo; Comp in Logging</td><td>Frequency trends in logging workers&rsquo; comp. Experience mod factors, managed care, and return-to-work programs that reduce your ex-mod.</td></tr>
+            <tr><td class="t">12:30 PM</td><td><span class="sb-b">Lunch</span></td><td>Catered lunch. Sponsor recognition. Pinnacle Award nomination announcements.</td></tr>
+            <tr><td class="t">1:30 PM</td><td><span class="sb-s">Session 4</span>Loss Control Best Practices</td><td>Swamp Fox loss control team presents field findings from the past year. Top causes of claims and the operational changes that reduce them.</td></tr>
+            <tr><td class="t">2:15 PM</td><td><span class="sb-s">Session 5</span>Equipment &amp; Fleet Risk</td><td>Valuation challenges for forestry equipment in a volatile replacement market. Agreed value vs. ACV. Fleet telematics and its impact on underwriting.</td></tr>
+            <tr><td class="t">3:00 PM</td><td><span class="sb-b">Break</span></td><td>Afternoon refreshments. Q&amp;A tables with agents.</td></tr>
+            <tr><td class="t">3:15 PM</td><td><span class="sb-s">Session 6</span>Claims Panel</td><td>Real claims, real outcomes. Industry professionals discuss how documentation, safety records, and response protocols affect claim resolution.</td></tr>
+            <tr><td class="t">4:00 PM</td><td><span class="sb-k">Keynote</span>Closing Address</td><td>Swamp Fox Scholarship presentation. Pinnacle Award ceremony. Closing remarks from agency principals.</td></tr>
+            <tr><td class="t">4:30 PM</td><td><span class="sb-o">Social</span>Networking Reception</td><td>Open bar reception for all attendees. Meet carriers, sponsors, and industry peers. Summit concludes at 6:00 PM.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- REGISTRATION FORM -->
+  <section class="sec bg-sage" id="summit-reg">
+    <div class="sec-in" style="max-width:760px">
+      <div class="reveal" style="text-align:center;margin-bottom:2rem">
+        <p class="badge" style="justify-content:center">Limited Seating</p>
+        <h2 class="sec-title" style="text-align:center">Register for Summit 2026</h2>
+        <p style="color:var(--mid);text-align:center;line-height:1.7">September 15, 2026 &bull; Moncks Corner, SC &bull; Registration is complimentary for SCTPA members and Swamp Fox clients.</p>
+      </div>
+      <div class="form-card reveal">
+        <div x-show="!submitted.summit">
+          <h3 class="form-title">Summit 2026 Registration</h3>
+          <p class="form-desc">Complete all fields to secure your seat. Confirmation will be sent to the email address provided.</p>
+          <form @submit.prevent="submitForm('summit')">
+            <div class="form-row">
+              <div class="form-group"><label>First Name *</label><input type="text" placeholder="First name" required></div>
+              <div class="form-group"><label>Last Name *</label><input type="text" placeholder="Last name" required></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label>Company *</label><input type="text" placeholder="Company name" required></div>
+              <div class="form-group"><label>Title / Role</label><input type="text" placeholder="Your title"></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label>Email Address *</label><input type="email" placeholder="you@company.com" required></div>
+              <div class="form-group"><label>Phone Number *</label><input type="tel" placeholder="(843) 000-0000" required></div>
+            </div>
+            <div class="form-group">
+              <label>Industry / Operation Type *</label>
+              <select required>
+                <option value="">Select...</option>
+                <option>Logging / Timber Harvesting</option>
+                <option>Log Hauling / Trucking</option>
+                <option>Land Clearing</option>
+                <option>Sawmill / Wood Processing</option>
+                <option>Insurance / Underwriting</option>
+                <option>Government / Regulatory</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>SCTPA Member?</label>
+              <select>
+                <option value="">Select...</option>
+                <option>Yes, current member</option>
+                <option>No, but interested in learning more</option>
+                <option>Not applicable</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Dietary Requirements or Accessibility Needs</label>
+              <textarea placeholder="Let us know of any dietary restrictions or accessibility accommodations needed..."></textarea>
+            </div>
+            <div class="form-group" style="margin-top:.5rem">
+              <button type="submit" class="btn btn-primary btn-lg" style="width:100%">Confirm Registration</button>
+            </div>
+          </form>
+        </div>
+        <div x-show="submitted.summit" class="form-success">
+          <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <h3>You&rsquo;re Registered for Summit 2026</h3>
+          <p>A confirmation has been sent to your email. Questions? Call (843) 761-3999 or email info@swampfoxagency.com.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- end SUMMIT -->
+
+<!-- ============================================================
+     ABOUT TAB
+     ============================================================ -->
+<div x-show="tab==='about'" x-cloak>
+  <div class="pbanner" style="background-image:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1400&q=85')">
+    <div class="pbanner-txt">
+      <p class="badge">Est. 1987</p>
+      <h2>About Swamp Fox Agency</h2>
+      <p>Moncks Corner, South Carolina &mdash; Rooted in the Lowcountry</p>
+    </div>
+  </div>
+
+  <!-- TEAM PHOTO -->
+  <div class="team-banner">
+    <img src="images/team-photo.jpg" onerror="this.src='https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1400&q=85'" alt="Swamp Fox Agency team Moncks Corner South Carolina">
+    <div class="team-caption">
+      <h3>The Swamp Fox Team</h3>
+      <p>Our agents and staff &mdash; Moncks Corner, South Carolina</p>
+    </div>
+  </div>
+
+  <!-- WHO WE ARE -->
+  <section class="sec">
+    <div class="sec-in">
+      <div class="split">
+        <div class="split-img reveal-left">
+          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&q=82" alt="Swamp Fox Agency professional team">
+        </div>
+        <div class="split-text reveal-right">
+          <p class="badge">Who We Are</p>
+          <h2 class="sec-title">More Than an Insurance Agency</h2>
+          <p>Swamp Fox Agency was founded in Moncks Corner, South Carolina with a mission that has never changed: provide honest, expert insurance counsel to the families, farmers, loggers, and business owners who built this region.</p>
+          <p>We have spent nearly four decades doing exactly that &mdash; and the way we do it has not changed much either. We sit across the table from you. We learn your operation. We tell you what coverage gaps you actually have, not just what will generate the highest commission.</p>
+          <p>When a claim happens, we answer the phone and we fight for you. That is not a tagline &mdash; it is the daily practice of every agent at Swamp Fox.</p>
+          <p>As the only endorsed agency of the South Carolina Timber Producers Association, we carry a responsibility to the forestry community that we take seriously in every policy we write, every consultation we deliver, and every claim we manage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRINCIPLES -->
+  <section class="sec bg-sage">
+    <div class="sec-in">
+      <div style="text-align:center;margin-bottom:2.5rem" class="reveal">
+        <p class="badge" style="justify-content:center">What Guides Us</p>
+        <h2 class="sec-title" style="text-align:center">The Principles We Work By</h2>
+      </div>
+      <div class="card-grid">
+        <div class="card reveal">
+          <div class="card-body">
+            <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <h3>Honest Counsel</h3>
+            <p>We tell clients what they need to hear, not what they want to hear. If a coverage decision carries meaningful risk, we explain it plainly. Our recommendations are based on your interests &mdash; not on commission structure or carrier relationships.</p>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-body">
+            <div class="card-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/></svg></div>
+            <h3>Industry Expertise</h3>
+            <p>Forestry and trucking insurance is a specialty. Generic coverage from a generalist agency creates dangerous gaps. Our team studies the industries we serve so that the coverage we write actually protects the operation it is designed for.</p>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-body">
+            <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+            <h3>Claims Advocacy</h3>
+            <p>Our job does not end at policy issuance. When a claim occurs, we become your advocate &mdash; working with carriers to ensure fair, prompt resolution and that every applicable coverage is applied correctly and completely.</p>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-body">
+            <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
+            <h3>Community Commitment</h3>
+            <p>Swamp Fox Agency gives back through the <strong>Swamp Fox Scholarship</strong> for deserving students, the <strong>Pinnacle Award</strong> recognizing outstanding timber industry leaders, and active sponsorship of SCTPA and regional agricultural events.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMUNITY SECTION -->
+  <section class="sec bg-parch">
+    <div class="sec-in">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center" class="reveal">
+        <div>
+          <p class="badge">Giving Back</p>
+          <h2 class="sec-title">Rooted in Community</h2>
+          <p style="color:var(--mid);line-height:1.75;margin-bottom:1.1rem">Swamp Fox Agency has always believed that a successful business owes a debt to the community that made it possible. That belief drives two programs we are proud to sustain.</p>
+          <p style="color:var(--mid);line-height:1.75;margin-bottom:1.1rem">The <strong style="color:var(--forest)">Swamp Fox Scholarship</strong> supports deserving students in the Lowcountry who demonstrate academic achievement and community involvement. Education is the foundation of a stronger South Carolina, and we are honored to invest in it year after year.</p>
+          <p style="color:var(--mid);line-height:1.75;margin-bottom:1.8rem">The <strong style="color:var(--forest)">Pinnacle Award</strong> recognizes outstanding leaders in the South Carolina timber and agricultural industries &mdash; the people who keep the Lowcountry economy moving and who deserve to be celebrated for it.</p>
+          <button class="btn btn-primary" @click="go('quote')">Connect With Our Team</button>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=600&q=82" alt="South Carolina community Swamp Fox Agency" style="border-radius:var(--radius);width:100%;height:340px;object-fit:cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEDIA & RECOGNITION -->
+  <section class="sec">
+    <div class="sec-in">
+      <div style="text-align:center;margin-bottom:2.5rem" class="reveal">
+        <p class="badge" style="justify-content:center">Media &amp; Recognition</p>
+        <h2 class="sec-title" style="text-align:center">Recognized Across the Region</h2>
+        <p style="color:var(--mid);max-width:560px;margin:0 auto 2rem;line-height:1.75">Swamp Fox Agency has been featured by ABC News 4 for our work supporting South Carolina&rsquo;s timber and agricultural communities. We also publish regular posts on insurance topics for our clients.</p>
+        <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:2.5rem">
+          <a href="https://abcnews4.com" target="_blank" rel="noopener" class="btn btn-primary">View ABC News 4 Feature</a>
+          <a href="https://www.facebook.com/Swamp-Fox-Agency-161794570507166/" target="_blank" rel="noopener" class="btn btn-outline">Follow on Facebook</a>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.4rem">
+        <div class="card reveal" style="display:flex;flex-direction:column">
+          <div style="height:180px;overflow:hidden">
+            <img src="https://images.unsplash.com/photo-1611859266238-4b98091d9d9b?w=600&q=80" alt="Black ice winter driving South Carolina" style="width:100%;height:100%;object-fit:cover;transition:transform .5s ease">
+          </div>
+          <div class="card-body" style="flex:1;display:flex;flex-direction:column">
+            <p style="font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);font-weight:700;margin-bottom:.45rem">Auto Insurance &bull; Winter Safety</p>
+            <h3>Black Ice Accidents: What Auto Insurance Really Covers</h3>
+            <p style="flex:1">South Carolina drivers rarely encounter black ice &mdash; which makes it more dangerous when they do. Learn which coverages apply and what to document immediately after a weather-related accident.</p>
+            <a href="https://www.facebook.com/Swamp-Fox-Agency-161794570507166/" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.86rem;margin-top:.75rem;display:inline-flex;align-items:center;gap:.3rem">Read on Facebook &rarr;</a>
+          </div>
+        </div>
+        <div class="card reveal" style="display:flex;flex-direction:column">
+          <div style="height:180px;overflow:hidden">
+            <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&q=80" alt="South Carolina highway driving auto insurance" style="width:100%;height:100%;object-fit:cover;transition:transform .5s ease">
+          </div>
+          <div class="card-body" style="flex:1;display:flex;flex-direction:column">
+            <p style="font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);font-weight:700;margin-bottom:.45rem">Auto Insurance &bull; Coverage Tips</p>
+            <h3>Common Auto Insurance Mistakes That Cost Drivers Money</h3>
+            <p style="flex:1">From carrying minimum limits on a financed vehicle to skipping uninsured motorist coverage, small policy decisions carry large financial consequences. Our agents break down the five mistakes we see most often.</p>
+            <a href="https://www.facebook.com/Swamp-Fox-Agency-161794570507166/" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;font-size:.86rem;margin-top:.75rem;display:inline-flex;align-items:center;gap:.3rem">Read on Facebook &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- end ABOUT -->
+
+<!-- ============================================================
+     LOCATIONS TAB
+     ============================================================ -->
+<div x-show="tab==='locations'" x-cloak>
+  <section style="background:var(--dark);padding:3.5rem 2rem 0">
+    <div style="max-width:1200px;margin:0 auto;text-align:center;padding-bottom:2rem">
+      <p class="badge" style="color:var(--sage);justify-content:center">Find Us</p>
+      <h2 class="sec-title" style="color:#fff">Four Offices Across SC &amp; GA</h2>
+      <p style="color:rgba(255,255,255,.58);max-width:520px;margin:0 auto">Click any office pin to open Google Maps directions. Each office serves clients throughout the surrounding region and is staffed by licensed agents.</p>
+    </div>
+  </section>
+  <section class="map-wrap" style="padding-top:2rem">
+    <div class="map-grid">
+      <div>
+        <svg viewBox="0 0 540 420" xmlns="http://www.w3.org/2000/svg" style="width:100%;filter:drop-shadow(0 4px 24px rgba(0,0,0,.5))">
+          <defs>
+            <filter id="glow"><feGaussianBlur stdDeviation="4" result="cb"/><feMerge><feMergeNode in="cb"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+            <filter id="glow2"><feGaussianBlur stdDeviation="2.5" result="cb2"/><feMerge><feMergeNode in="cb2"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          </defs>
+          <path d="M 125 78 L 425 73 L 438 84 L 455 102 L 463 124 L 458 148 L 447 168 L 436 179 L 420 188 L 400 198 L 378 214 L 358 228 L 343 243 L 326 252 L 306 257 L 284 254 L 262 258 L 242 263 L 220 268 L 198 264 L 176 254 L 160 244 L 144 228 L 132 213 L 120 197 L 109 177 L 102 158 L 98 138 L 100 115 Z" fill="rgba(45,138,126,0.12)" stroke="rgba(183,205,194,0.32)" stroke-width="1.5"/>
+          <path d="M 109 177 L 102 200 L 97 232 L 94 264 L 98 296 L 104 318 L 120 328 L 146 333 L 168 328 L 178 312 L 182 285 L 176 254 L 160 244 L 144 228 L 132 213 L 120 197 Z" fill="rgba(30,57,42,0.25)" stroke="rgba(183,205,194,0.22)" stroke-width="1"/>
+          <text x="118" y="302" fill="rgba(183,205,194,0.42)" font-size="11" font-family="Inter,sans-serif" font-weight="600">GA</text>
+          <text x="288" y="168" fill="rgba(183,205,194,0.38)" font-size="13" font-family="Inter,sans-serif" font-weight="600">SC</text>
+          <text x="398" y="248" fill="rgba(183,205,194,0.18)" font-size="9" font-family="Inter,sans-serif" font-style="italic">Atlantic</text>
+          <!-- Moncks Corner Main -->
+          <a href="https://www.google.com/maps/search/?api=1&query=1122+Pinopolis+Rd+Moncks+Corner+SC+29461" target="_blank" rel="noopener">
+            <circle cx="234" cy="213" r="18" fill="rgba(196,154,60,.15)" filter="url(#glow)"/>
+            <circle cx="234" cy="213" r="10" fill="#C49A3C" stroke="#fff" stroke-width="2.5" class="map-dot"/>
+            <text x="250" y="209" fill="#fff" font-size="10.5" font-family="Inter,sans-serif" font-weight="700">Moncks Corner</text>
+            <text x="250" y="221" fill="rgba(183,205,194,.7)" font-size="8.5" font-family="Inter,sans-serif">1122 Pinopolis Rd (Main)</text>
+          </a>
+          <!-- Moncks Corner Hwy 52 -->
+          <a href="https://www.google.com/maps/search/?api=1&query=2822+US-52+Moncks+Corner+SC+29461" target="_blank" rel="noopener">
+            <circle cx="254" cy="200" r="14" fill="rgba(0,99,91,.18)" filter="url(#glow2)"/>
+            <circle cx="254" cy="200" r="7.5" fill="#00635B" stroke="#fff" stroke-width="2" class="map-dot"/>
+            <text x="265" y="196" fill="rgba(255,255,255,.78)" font-size="9" font-family="Inter,sans-serif" font-weight="600">Hwy 52 Office</text>
+            <text x="265" y="206" fill="rgba(183,205,194,.62)" font-size="8" font-family="Inter,sans-serif">2822 US-52</text>
+          </a>
+          <!-- Summerville -->
+          <a href="https://www.google.com/maps/search/?api=1&query=1288+Nexton+Pkwy+Summerville+SC+29483" target="_blank" rel="noopener">
+            <circle cx="207" cy="228" r="18" fill="rgba(196,154,60,.15)" filter="url(#glow)"/>
+            <circle cx="207" cy="228" r="10" fill="#C49A3C" stroke="#fff" stroke-width="2.5" class="map-dot"/>
+            <text x="90" y="224" fill="#fff" font-size="10.5" font-family="Inter,sans-serif" font-weight="700">Summerville</text>
+            <text x="90" y="236" fill="rgba(183,205,194,.7)" font-size="8.5" font-family="Inter,sans-serif">1288 Nexton Pkwy</text>
+          </a>
+          <!-- Waycross GA -->
+          <a href="https://www.google.com/maps/search/?api=1&query=960+S+City+Blvd+Waycross+GA+31501" target="_blank" rel="noopener">
+            <circle cx="133" cy="291" r="18" fill="rgba(196,154,60,.15)" filter="url(#glow)"/>
+            <circle cx="133" cy="291" r="10" fill="#C49A3C" stroke="#fff" stroke-width="2.5" class="map-dot"/>
+            <text x="150" y="287" fill="#fff" font-size="10.5" font-family="Inter,sans-serif" font-weight="700">Waycross, GA</text>
+            <text x="150" y="299" fill="rgba(183,205,194,.7)" font-size="8.5" font-family="Inter,sans-serif">960 S City Blvd</text>
+          </a>
+        </svg>
+      </div>
+      <div class="loc-cards">
+        <a class="loc-card" href="https://www.google.com/maps/search/?api=1&query=1122+Pinopolis+Rd+Moncks+Corner+SC+29461" target="_blank" rel="noopener" style="display:block">
+          <h4>Moncks Corner &mdash; Main Office</h4>
+          <p>1122 Pinopolis Rd<br>Moncks Corner, SC 29461<br>Mon&ndash;Fri 8:30 AM &ndash; 5:00 PM</p>
+          <span style="color:var(--gold);font-size:.77rem;font-weight:700;margin-top:.4rem;display:inline-block">Forestry Line: (843) 761-3999 &rarr;</span>
+        </a>
+        <a class="loc-card" href="https://www.google.com/maps/search/?api=1&query=2822+US-52+Moncks+Corner+SC+29461" target="_blank" rel="noopener" style="display:block">
+          <h4>Moncks Corner &mdash; Hwy 52</h4>
+          <p>2822 US-52<br>Moncks Corner, SC 29461<br>Mon&ndash;Fri 8:30 AM &ndash; 5:00 PM</p>
+          <span style="color:var(--gold);font-size:.77rem;font-weight:700;margin-top:.4rem;display:inline-block">Commercial: (843) 628-0280 &rarr;</span>
+        </a>
+        <a class="loc-card" href="https://www.google.com/maps/search/?api=1&query=1288+Nexton+Pkwy+Summerville+SC+29483" target="_blank" rel="noopener" style="display:block">
+          <h4>Summerville, SC</h4>
+          <p>1288 Nexton Pkwy<br>Summerville, SC 29483<br>Mon&ndash;Fri 8:30 AM &ndash; 5:00 PM</p>
+          <span style="color:var(--gold);font-size:.77rem;font-weight:700;margin-top:.4rem;display:inline-block">Get Directions &rarr;</span>
+        </a>
+        <a class="loc-card" href="https://www.google.com/maps/search/?api=1&query=960+S+City+Blvd+Waycross+GA+31501" target="_blank" rel="noopener" style="display:block">
+          <h4>Waycross, Georgia</h4>
+          <p>960 S City Blvd<br>Waycross, GA 31501<br>Mon&ndash;Fri 8:30 AM &ndash; 5:00 PM</p>
+          <span style="color:var(--gold);font-size:.77rem;font-weight:700;margin-top:.4rem;display:inline-block">Get Directions &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</div><!-- end LOCATIONS -->
+
+<!-- ============================================================
+     QUOTE / CONTACT TAB
+     ============================================================ -->
+<div x-show="tab==='quote'" x-cloak>
+  <section class="sec" style="background:var(--sage-bg)">
+    <div class="sec-in" style="max-width:880px">
+      <div class="reveal" style="margin-bottom:2rem">
+        <p class="badge">Contact Us</p>
+        <h2 class="sec-title">How Can We Help You?</h2>
+        <p style="color:var(--mid);line-height:1.72">Select the type of request below. Our licensed agents typically respond within one business day. Every inquiry is handled by a real person at one of our four offices &mdash; not a call center or automated system.</p>
+      </div>
+      <div class="form-tabs">
+        <button class="form-tab" :class="activeForm==='quote'?'active':''" @click="activeForm='quote'">Request a Quote</button>
+        <button class="form-tab" data-form="lc" :class="activeForm==='lc'?'active':''" @click="activeForm='lc'">Loss Control Consultation</button>
+        <button class="form-tab" :class="activeForm==='summit'?'active':''" @click="activeForm='summit'">Summit 2026 Registration</button>
+      </div>
+
+      <!-- QUOTE FORM -->
+      <div x-show="activeForm==='quote'">
+        <div x-show="!submitted.quote" class="form-card">
+          <h3 class="form-title">Request an Insurance Quote</h3>
+          <p class="form-desc">Tell us what you need. A licensed Swamp Fox agent will contact you to gather the details needed for an accurate quote &mdash; not a rough placeholder number.</p>
+          <form @submit.prevent="submitForm('quote')">
+            <div class="form-row">
+              <div class="form-group"><label>First Name *</label><input type="text" placeholder="First name" required></div>
+              <div class="form-group"><label>Last Name *</label><input type="text" placeholder="Last name" required></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label>Phone Number *</label><input type="tel" placeholder="(843) 000-0000" required></div>
+              <div class="form-group"><label>Email Address *</label><input type="email" placeholder="you@email.com" required></div>
+            </div>
+            <div class="form-group">
+              <label>Company / Operation Name</label>
+              <input type="text" placeholder="Business name (if applicable)">
+            </div>
+            <div class="form-group">
+              <label>Coverage Type Needed *</label>
+              <select required>
+                <option value="">Select coverage type...</option>
+                <option>Forestry &amp; Logging Insurance</option>
+                <option>Commercial Trucking</option>
+                <option>General Liability</option>
+                <option>Commercial Property</option>
+                <option>Business Owners Policy (BOP)</option>
+                <option>Workers&rsquo; Compensation</option>
+                <option>Commercial Auto</option>
+                <option>Homeowners Insurance</option>
+                <option>Personal Auto</option>
+                <option>Life Insurance</option>
+                <option>Multiple Coverage Types</option>
+                <option>Other / Not Sure</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>State of Operation *</label>
+                <select required>
+                  <option value="">Select state...</option>
+                  <option>South Carolina</option><option>Georgia</option><option>North Carolina</option>
+                  <option>Virginia</option><option>Florida</option><option>Alabama</option>
+                  <option>Mississippi</option><option>Tennessee</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Best Time to Reach You</label>
+                <select>
+                  <option value="">Select...</option>
+                  <option>Morning (8 AM &ndash; 12 PM)</option>
+                  <option>Afternoon (12 &ndash; 4 PM)</option>
+                  <option>Either</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Additional Details</label>
+              <textarea placeholder="Tell us about your operation, number of employees, vehicles, equipment, or any specific coverage questions..."></textarea>
+            </div>
+            <div class="form-group" style="margin-top:.5rem">
+              <button type="submit" class="btn btn-primary btn-lg" style="width:100%">Submit Quote Request</button>
+            </div>
+          </form>
+        </div>
+        <div x-show="submitted.quote" class="form-card form-success">
+          <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <h3>Quote Request Received</h3>
+          <p>A licensed agent will contact you within one business day. For urgent inquiries, call (843) 761-3999 &mdash; Forestry &amp; Trucking, or (843) 628-0280 &mdash; Commercial &amp; Personal.</p>
+        </div>
+      </div>
+
+      <!-- LC FORM (mini version in quote tab) -->
+      <div x-show="activeForm==='lc'">
+        <div x-show="!submitted.lc2" class="form-card">
+          <h3 class="form-title">Loss Control Consultation Request</h3>
+          <p class="form-desc">A Swamp Fox loss control specialist will contact you within one business day to schedule an evaluation of your operation.</p>
+          <form @submit.prevent="submitForm('lc2')">
+            <div class="form-row">
+              <div class="form-group"><label>Name *</label><input type="text" placeholder="Your full name" required></div>
+              <div class="form-group"><label>Company *</label><input type="text" placeholder="Operation name" required></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label>Phone *</label><input type="tel" placeholder="(843) 000-0000" required></div>
+              <div class="form-group"><label>Email *</label><input type="email" placeholder="you@email.com" required></div>
+            </div>
+            <div class="form-group">
+              <label>Operation Type *</label>
+              <select required>
+                <option value="">Select...</option>
+                <option>Logging / Timber Harvesting</option><option>Log Hauling / Trucking</option>
+                <option>Land Clearing</option><option>General Contractor</option><option>Other</option>
+              </select>
+            </div>
+            <div class="form-group"><label>Primary Safety Concern</label><textarea placeholder="Describe what you would like evaluated or improved..."></textarea></div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;margin-top:.5rem">Request Consultation</button>
+          </form>
+        </div>
+        <div x-show="submitted.lc2" class="form-card form-success">
+          <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <h3>Request Received</h3>
+          <p>A loss control specialist will contact you within one business day. Call (843) 761-3999 for urgent needs.</p>
+        </div>
+      </div>
+
+      <!-- SUMMIT FORM (mini) -->
+      <div x-show="activeForm==='summit'">
+        <div x-show="!submitted.summit2" class="form-card">
+          <h3 class="form-title">Summit 2026 Registration</h3>
+          <p class="form-desc">September 15, 2026 &bull; Moncks Corner, SC &bull; Complimentary for SCTPA members and Swamp Fox clients.</p>
+          <form @submit.prevent="submitForm('summit2')">
+            <div class="form-row">
+              <div class="form-group"><label>First Name *</label><input type="text" placeholder="First name" required></div>
+              <div class="form-group"><label>Last Name *</label><input type="text" placeholder="Last name" required></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label>Company *</label><input type="text" placeholder="Company name" required></div>
+              <div class="form-group"><label>Email *</label><input type="email" placeholder="you@company.com" required></div>
+            </div>
+            <div class="form-group">
+              <label>Industry *</label>
+              <select required>
+                <option value="">Select...</option>
+                <option>Logging / Timber</option><option>Trucking</option><option>Insurance</option>
+                <option>Government / Regulatory</option><option>Other</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;margin-top:.5rem">Confirm Registration</button>
+          </form>
+        </div>
+        <div x-show="submitted.summit2" class="form-card form-success">
+          <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <h3>Registration Confirmed</h3>
+          <p>We will email your confirmation. Questions? Call (843) 761-3999.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- end QUOTE -->
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-in">
+    <div class="ft-brand">
+      <img src="images/swamp-fox-logo.webp" alt="Swamp Fox Agency">
+      <p>The only endorsed agency of the South Carolina Timber Producers Association. Serving forestry, trucking, commercial, and personal insurance clients across SC and GA since 1987.</p>
+      <div class="ft-social">
+        <a href="https://www.facebook.com/Swamp-Fox-Agency-161794570507166/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>Facebook
+        </a>
+        <a href="https://www.instagram.com/swampfoxagency/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>Instagram
+        </a>
+        <a href="https://www.linkedin.com/company/swamp-fox-agency" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn
+        </a>
+        <a href="https://www.youtube.com/@swampfoxagency" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.4a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>YouTube
+        </a>
+      </div>
+    </div>
+    <div class="ft-col">
+      <h4>Services</h4>
+      <ul>
+        <li><span @click="go('services')">Forestry &amp; Logging</span></li>
+        <li><span @click="go('services')">Commercial Trucking</span></li>
+        <li><span @click="go('services')">Commercial Lines</span></li>
+        <li><span @click="go('services')">Personal Lines</span></li>
+        <li><span @click="go('losscontrol')">Loss Control</span></li>
+      </ul>
+    </div>
+    <div class="ft-col">
+      <h4>Company</h4>
+      <ul>
+        <li><span @click="go('about')">About Us</span></li>
+        <li><span @click="go('summit')">Summit 2026</span></li>
+        <li><span @click="go('locations')">Our Offices</span></li>
+        <li><a href="https://abcnews4.com" target="_blank" rel="noopener">News Coverage</a></li>
+        <li><span @click="go('about')">Swamp Fox Scholarship</span></li>
+        <li><span @click="go('about')">Pinnacle Award</span></li>
+      </ul>
+    </div>
+    <div class="ft-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+18437613999">(843) 761-3999 &mdash; Forestry</a></li>
+        <li><a href="tel:+18436280280">(843) 628-0280 &mdash; Commercial</a></li>
+        <li><a href="mailto:info@swampfoxagency.com">info@swampfoxagency.com</a></li>
+        <li><span>Moncks Corner, SC 29461</span></li>
+        <li><span>Summerville, SC 29483</span></li>
+        <li><span>Waycross, GA 31501</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-bottom">
+    <span>&copy; 2025 Swamp Fox Agency. All rights reserved. Licensed in SC, GA, NC, VA, FL, AL, MS &amp; TN.</span>
+    <span>SCTPA Endorsed Agency &bull; <a href="mailto:info@swampfoxagency.com">info@swampfoxagency.com</a> &bull; <a href="https://swampfoxagency.com">swampfoxagency.com</a></span>
+  </div>
+</footer>
+
+<script>
+function sfApp(){
+  return {
+    tab: 'home',
+    activeForm: 'quote',
+    scrolled: false,
+    submitted: { quote:false, lc:false, lc2:false, summit:false, summit2:false },
+    countdown: { d:'--', h:'--', m:'--', s:'--' },
+    counts: { years: 0 },
+    go(t){
+      this.tab = t;
+      if(t==='quote') this.activeForm='quote';
+      window.scrollTo({top:0,behavior:'smooth'});
+      window.history.replaceState(null,'','#'+t);
+    },
+    init(){
+      const hash = window.location.hash.replace('#','');
+      if(['home','services','losscontrol','summit','about','locations','quote'].includes(hash)) this.tab=hash;
+      window.addEventListener('scroll',()=>{
+        this.scrolled = window.scrollY > 40;
+        this.revealElements();
+      });
+      this.updateCountdown();
+      setInterval(()=>this.updateCountdown(),1000);
+      this.animateCounts();
+      setTimeout(()=>this.revealElements(),100);
+      this.initTimeline();
+    },
+    updateCountdown(){
+      const target = new Date('2026-09-15T09:00:00');
+      const now = new Date();
+      const diff = target - now;
+      if(diff <= 0){ this.countdown={d:'00',h:'00',m:'00',s:'00'}; return; }
+      const d = Math.floor(diff/86400000);
+      const h = Math.floor((diff%86400000)/3600000);
+      const m = Math.floor((diff%3600000)/60000);
+      const s = Math.floor((diff%60000)/1000);
+      this.countdown={d:String(d).padStart(2,'0'),h:String(h).padStart(2,'0'),m:String(m).padStart(2,'0'),s:String(s).padStart(2,'0')};
+    },
+    animateCounts(){
+      let start = null;
+      const target = new Date().getFullYear() - 1987;
+      const step = (ts)=>{
+        if(!start) start=ts;
+        const prog = Math.min((ts-start)/1200,1);
+        this.counts.years = Math.floor(prog*target);
+        if(prog<1) requestAnimationFrame(step);
+        else this.counts.years = target;
+      };
+      setTimeout(()=>requestAnimationFrame(step),400);
+    },
+    revealElements(){
+      document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el=>{
+        const r = el.getBoundingClientRect();
+        if(r.top < window.innerHeight - 80) el.classList.add('vis');
+      });
+    },
+    initTimeline(){
+      const obs = new IntersectionObserver((entries)=>{
+        entries.forEach((e,i)=>{
+          if(e.isIntersecting) setTimeout(()=>e.target.classList.add('vis'),i*120);
+        });
+      },{threshold:0.15});
+      document.querySelectorAll('.tl-item').forEach(el=>obs.observe(el));
+    },
+    submitForm(name){
+      this.submitted[name]=true;
+      try{
+        const data={form:name,time:new Date().toISOString()};
+        localStorage.setItem('sfForm_'+name,JSON.stringify(data));
+      }catch(e){}
+    }
+  }
+}
+function toggleFaq(id){
+  const item=document.getElementById(id);
+  const isOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(f=>f.classList.remove('open'));
+  if(!isOpen) item.classList.add('open');
+}
+// Run reveal on load
+window.addEventListener('load',()=>{
+  document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el=>{
+    const r=el.getBoundingClientRect();
+    if(r.top<window.innerHeight-80) el.classList.add('vis');
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Swamp Fox Agency — Social Media Assets 2025</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#00635B;--forest:#1E392A;--gold:#C49A3C;
+  --sage:#B7CDC2;--cream:#FDFBF7;--charcoal:#1C2B2E;--mid:#4A6070;
+  --ff-serif:"Playfair Display",Georgia,serif;
+  --ff-sans:"Inter",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--ff-sans);background:#f0f2f0;color:var(--charcoal);padding:2rem}
+h1{font-family:var(--ff-serif);font-size:2rem;color:var(--forest);margin-bottom:.4rem}
+.page-sub{color:var(--mid);font-size:.9rem;margin-bottom:2.5rem}
+.section-head{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin:2.5rem 0 1.2rem;padding-bottom:.5rem;border-bottom:2px solid var(--teal)}
+.post-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.5rem;margin-bottom:3rem}
+
+/* ---- LINKEDIN POSTS ---- */
+.li-post{background:#fff;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,.08);overflow:hidden;max-width:540px}
+.li-header{display:flex;align-items:center;gap:.75rem;padding:1rem 1.2rem .6rem}
+.li-avatar{width:42px;height:42px;border-radius:50%;object-fit:cover}
+.li-avatar-fallback{width:42px;height:42px;border-radius:50%;background:var(--forest);display:flex;align-items:center;justify-content:center}
+.li-avatar-fallback img{height:26px;width:auto;filter:brightness(0) invert(1)}
+.li-name{font-size:.88rem;font-weight:700;color:var(--charcoal)}
+.li-title{font-size:.75rem;color:var(--mid)}
+.li-img{width:100%;height:200px;object-fit:cover;display:block}
+.li-body{padding:1rem 1.2rem 1.2rem}
+.li-text{font-size:.86rem;color:var(--charcoal);line-height:1.65;white-space:pre-line}
+.li-hashtags{margin-top:.85rem;font-size:.78rem;color:#0a66c2;line-height:1.7}
+.li-actions{display:flex;gap:1.5rem;padding:.75rem 1.2rem;border-top:1px solid #e8e8e8;font-size:.78rem;color:var(--mid)}
+.li-actions span{cursor:pointer;display:flex;align-items:center;gap:.3rem;transition:color .2s}
+.li-actions span:hover{color:var(--teal)}
+.li-label{background:#0a66c2;color:#fff;font-size:.65rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.22rem .6rem;border-radius:2px;margin-left:auto;align-self:center}
+.copy-btn{background:var(--teal);color:#fff;border:none;padding:.38rem .9rem;border-radius:4px;font-size:.74rem;font-weight:600;cursor:pointer;margin-top:.75rem;transition:background .2s}
+.copy-btn:hover{background:var(--forest)}
+.copy-area{font-size:.82rem;color:var(--charcoal);line-height:1.65;background:#f8f9f8;border:1px solid #dde;border-radius:4px;padding:.75rem;margin-top:.75rem;white-space:pre-line;display:none}
+.li-post.expanded .copy-area{display:block}
+
+/* ---- INSTAGRAM POSTS ---- */
+.ig-post{border-radius:8px;overflow:hidden;box-shadow:0 2px 16px rgba(0,0,0,.12);max-width:400px}
+.ig-canvas{width:400px;height:400px;position:relative;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.ig-bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.ig-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(11,31,23,.92) 0%,rgba(11,31,23,.55) 50%,rgba(11,31,23,.12) 100%)}
+.ig-content{position:relative;z-index:1;padding:1.5rem}
+.ig-logo{height:36px;width:auto;filter:brightness(0) invert(1) opacity(.9);margin-bottom:.9rem}
+.ig-headline{font-family:var(--ff-serif);font-size:1.5rem;color:#fff;line-height:1.2;margin-bottom:.6rem}
+.ig-headline em{font-style:italic;color:var(--sage)}
+.ig-sub{font-size:.78rem;color:rgba(255,255,255,.75);line-height:1.55;margin-bottom:.9rem}
+.ig-cta{display:inline-block;background:var(--gold);color:var(--forest);font-size:.76rem;font-weight:700;padding:.38rem 1rem;border-radius:3px;letter-spacing:.04em;text-transform:uppercase}
+.ig-rule{width:32px;height:2px;background:var(--gold);margin-bottom:.8rem}
+.ig-bottom{background:#fff;padding:.8rem 1rem;display:flex;align-items:center;justify-content:space-between}
+.ig-handle{font-size:.76rem;color:var(--mid);font-weight:600}
+.ig-icons{display:flex;gap:.8rem}
+.ig-icons svg{width:16px;height:16px;stroke:var(--mid);fill:none;stroke-width:1.8}
+.ig-caption-box{background:#fff;padding:.85rem 1rem}
+.ig-caption-text{font-size:.8rem;color:var(--charcoal);line-height:1.6}
+.ig-caption-tags{font-size:.76rem;color:#0a66c2;margin-top:.4rem}
+.platform-badge{display:inline-flex;align-items:center;gap:.4rem;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.22rem .65rem;border-radius:2px}
+.li-badge{background:#0a66c2;color:#fff}
+.ig-badge{background:linear-gradient(45deg,#405de6,#5851db,#833ab4,#c13584,#e1306c,#fd1d1d);color:#fff}
+</style>
+</head>
+<body>
+
+<h1>Swamp Fox Agency — Social Media Assets</h1>
+<p class="page-sub">Ready-to-post LinkedIn and Instagram content. Click any post to reveal the copy text for pasting directly into each platform.</p>
+
+<!-- ============================================================ LINKEDIN ============================================================ -->
+<div class="section-head"><span class="platform-badge li-badge">LinkedIn</span> &nbsp; 3 Posts — Ready to Copy</div>
+<div class="post-grid">
+
+  <!-- LinkedIn Post 1 -->
+  <div class="li-post" onclick="this.classList.toggle('expanded')">
+    <div class="li-header">
+      <div class="li-avatar-fallback"><img src="images/swamp-fox-logo.webp" alt="Swamp Fox Agency" onerror="this.style.display='none'"></div>
+      <div>
+        <div class="li-name">Swamp Fox Agency</div>
+        <div class="li-title">Insurance Agency &bull; Moncks Corner, SC</div>
+      </div>
+      <span class="li-label">LinkedIn</span>
+    </div>
+    <img class="li-img" src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=540&q=82" alt="SC timber forestry" onerror="this.style.background='#1E392A'">
+    <div class="li-body">
+      <div class="li-text">If you run timber in South Carolina, your insurance needs to be written by someone who has actually reviewed a loss run from a logging operation.
+
+Most commercial carriers have not. Most agents have not.
+
+We have — for nearly 40 years.
+
+Swamp Fox Agency is the only insurance agency endorsed by the South Carolina Timber Producers Association. That is not a marketing claim. It is a formal endorsement earned through consistent, documented expertise in forestry and trucking risk.
+
+When you call us, you talk to an agent who knows what a skidder is. Who understands why motor truck cargo matters on a log haul. Who has read enough workers' comp claims in timber to know the exposures your current carrier probably missed.
+
+If your logging operation is up for renewal, we want to review your current program — at no cost, no commitment.
+
+📍 Four offices across SC and GA.
+📞 (843) 761-3999 — Forestry &amp; Trucking Line</div>
+      <div class="li-hashtags">#ForestryInsurance #LoggingIndustry #SouthCarolina #SCTPA #SwampFoxAgency #TimberIndustry #CommercialInsurance #Lowcountry</div>
+      <button class="copy-btn">Show Copy Text</button>
+      <div class="copy-area">If you run timber in South Carolina, your insurance needs to be written by someone who has actually reviewed a loss run from a logging operation.
+
+Most commercial carriers have not. Most agents have not.
+
+We have — for nearly 40 years.
+
+Swamp Fox Agency is the only insurance agency endorsed by the South Carolina Timber Producers Association. That is not a marketing claim. It is a formal endorsement earned through consistent, documented expertise in forestry and trucking risk.
+
+When you call us, you talk to an agent who knows what a skidder is. Who understands why motor truck cargo matters on a log haul. Who has read enough workers' comp claims in timber to know the exposures your current carrier probably missed.
+
+If your logging operation is up for renewal, we want to review your current program — at no cost, no commitment.
+
+📍 Four offices across SC and GA.
+📞 (843) 761-3999 — Forestry & Trucking Line
+
+#ForestryInsurance #LoggingIndustry #SouthCarolina #SCTPA #SwampFoxAgency #TimberIndustry #CommercialInsurance #Lowcountry</div>
+    </div>
+    <div class="li-actions">
+      <span>👍 Like</span><span>💬 Comment</span><span>↗ Share</span>
+    </div>
+  </div>
+
+  <!-- LinkedIn Post 2 -->
+  <div class="li-post" onclick="this.classList.toggle('expanded')">
+    <div class="li-header">
+      <div class="li-avatar-fallback"><img src="images/swamp-fox-logo.webp" alt="Swamp Fox Agency" onerror="this.style.display='none'"></div>
+      <div>
+        <div class="li-name">Swamp Fox Agency</div>
+        <div class="li-title">Insurance Agency &bull; Moncks Corner, SC</div>
+      </div>
+      <span class="li-label">LinkedIn</span>
+    </div>
+    <img class="li-img" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=540&q=82" alt="Loss control safety" onerror="this.style.background='#1E392A'">
+    <div class="li-body">
+      <div class="li-text">Loss control is not a service most agencies offer.
+
+It is a service most carriers require — and that almost no agent actually delivers.
+
+Here is what it means in practice: a trained professional comes to your yard, your trucks, your worksite. They review your driver qualification files, inspect your equipment, evaluate your safety documentation, and identify the exposures your current policy probably has not priced correctly.
+
+The documentation they produce matters to your carrier at renewal. A well-managed operation, properly documented, earns better rates. It also performs better when a serious claim happens.
+
+We have been doing this for logging and trucking operations in SC and GA since 1987.
+
+If you want to know what your operation looks like from a carrier's perspective — before your next renewal — call us.
+
+📞 (843) 761-3999 &bull; swampfoxagency.com</div>
+      <div class="li-hashtags">#LossControl #RiskManagement #LoggingInsurance #TruckingInsurance #WorkplaceSafety #SouthCarolina #SwampFoxAgency #DOTCompliance</div>
+      <button class="copy-btn">Show Copy Text</button>
+      <div class="copy-area">Loss control is not a service most agencies offer.
+
+It is a service most carriers require — and that almost no agent actually delivers.
+
+Here is what it means in practice: a trained professional comes to your yard, your trucks, your worksite. They review your driver qualification files, inspect your equipment, evaluate your safety documentation, and identify the exposures your current policy probably has not priced correctly.
+
+The documentation they produce matters to your carrier at renewal. A well-managed operation, properly documented, earns better rates. It also performs better when a serious claim happens.
+
+We have been doing this for logging and trucking operations in SC and GA since 1987.
+
+If you want to know what your operation looks like from a carrier's perspective — before your next renewal — call us.
+
+📞 (843) 761-3999 • swampfoxagency.com
+
+#LossControl #RiskManagement #LoggingInsurance #TruckingInsurance #WorkplaceSafety #SouthCarolina #SwampFoxAgency #DOTCompliance</div>
+    </div>
+    <div class="li-actions">
+      <span>👍 Like</span><span>💬 Comment</span><span>↗ Share</span>
+    </div>
+  </div>
+
+  <!-- LinkedIn Post 3 — Summit -->
+  <div class="li-post" onclick="this.classList.toggle('expanded')">
+    <div class="li-header">
+      <div class="li-avatar-fallback"><img src="images/swamp-fox-logo.webp" alt="Swamp Fox Agency" onerror="this.style.display='none'"></div>
+      <div>
+        <div class="li-name">Swamp Fox Agency</div>
+        <div class="li-title">Insurance Agency &bull; Moncks Corner, SC</div>
+      </div>
+      <span class="li-label">LinkedIn</span>
+    </div>
+    <img class="li-img" src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=540&q=82" alt="Summit conference" onerror="this.style.background='#1E392A'">
+    <div class="li-body">
+      <div class="li-text">Registration is open for Swamp Fox Summit 2026.
+
+September 15, 2026 &bull; Moncks Corner, SC
+
+This is the Southeast's dedicated conference for forestry and trucking professionals — operators, underwriters, safety managers, and industry leaders. A full day of sessions on:
+
+→ 2026 insurance market conditions for forestry and trucking
+→ DOT and FMCSA compliance updates
+→ Workers' compensation trends in logging operations
+→ Fleet risk management and equipment valuation
+→ Claims panel: real outcomes from real losses
+
+This is not a sales event. It is a working conference designed to help operations run safer and smarter.
+
+Attendance is complimentary for SCTPA members and Swamp Fox clients. Space is limited.
+
+Register at swampfoxagency.com or call (843) 761-3999.</div>
+      <div class="li-hashtags">#SwampFoxSummit2026 #ForestryIndustry #TruckingIndustry #SCTPA #SouthCarolina #RiskManagement #InsuranceConference #TimberIndustry</div>
+      <button class="copy-btn">Show Copy Text</button>
+      <div class="copy-area">Registration is open for Swamp Fox Summit 2026.
+
+September 15, 2026 • Moncks Corner, SC
+
+This is the Southeast's dedicated conference for forestry and trucking professionals — operators, underwriters, safety managers, and industry leaders. A full day of sessions on:
+
+→ 2026 insurance market conditions for forestry and trucking
+→ DOT and FMCSA compliance updates
+→ Workers' compensation trends in logging operations
+→ Fleet risk management and equipment valuation
+→ Claims panel: real outcomes from real losses
+
+This is not a sales event. It is a working conference designed to help operations run safer and smarter.
+
+Attendance is complimentary for SCTPA members and Swamp Fox clients. Space is limited.
+
+Register at swampfoxagency.com or call (843) 761-3999.
+
+#SwampFoxSummit2026 #ForestryIndustry #TruckingIndustry #SCTPA #SouthCarolina #RiskManagement #InsuranceConference #TimberIndustry</div>
+    </div>
+    <div class="li-actions">
+      <span>👍 Like</span><span>💬 Comment</span><span>↗ Share</span>
+    </div>
+  </div>
+
+</div>
+
+<!-- ============================================================ INSTAGRAM ============================================================ -->
+<div class="section-head"><span class="platform-badge ig-badge">Instagram</span> &nbsp; 3 Posts — Same Brand, Maximum Impact</div>
+<div class="post-grid">
+
+  <!-- Instagram Post 1 — SCTPA Authority -->
+  <div class="ig-post">
+    <div class="ig-canvas">
+      <div class="ig-bg" style="background-image:url('https://images.unsplash.com/photo-1448375240586-882707db888b?w=400&q=85')"></div>
+      <div class="ig-content">
+        <img class="ig-logo" src="images/swamp-fox-logo.webp" alt="Swamp Fox Agency" onerror="this.style.display='none'">
+        <div class="ig-rule"></div>
+        <div class="ig-headline">South Carolina&rsquo;s Only <em>SCTPA-Endorsed</em> Agency</div>
+        <div class="ig-sub">Nearly 40 years protecting the timber industry. Four offices. Eight states.</div>
+        <span class="ig-cta">Get a Quote</span>
+      </div>
+    </div>
+    <div class="ig-bottom">
+      <span class="ig-handle">@swampfoxagency</span>
+      <div class="ig-icons">
+        <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+      </div>
+    </div>
+    <div class="ig-caption-box">
+      <div class="ig-caption-text">The only insurance agency endorsed by the South Carolina Timber Producers Association — and we have been since the beginning. 🌲 Forestry. Logging. Trucking. Commercial. Personal. Four offices across SC &amp; GA.<br><br>📞 (843) 761-3999 | swampfoxagency.com</div>
+      <div class="ig-caption-tags">#SwampFoxAgency #SCTPA #ForestryInsurance #LoggingInsurance #SouthCarolina #Lowcountry #MonksCorner #InsuranceAgency #TimberIndustry</div>
+    </div>
+  </div>
+
+  <!-- Instagram Post 2 — Loss Control -->
+  <div class="ig-post">
+    <div class="ig-canvas">
+      <div class="ig-bg" style="background-image:url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=400&q=85')"></div>
+      <div class="ig-content">
+        <img class="ig-logo" src="images/swamp-fox-logo.webp" alt="Swamp Fox Agency" onerror="this.style.display='none'">
+        <div class="ig-rule"></div>
+        <div class="ig-headline">Your Fleet. <em>Your Risk.</em> Our Job.</div>
+        <div class="ig-sub">From single log trucks to full fleets — coverage built for how you actually operate.</div>
+        <span class="ig-cta">Talk to an Agent</span>
+      </div>
+    </div>
+    <div class="ig-bottom">
+      <span class="ig-handle">@swampfoxagency</span>
+      <div class="ig-icons">
+        <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+      </div>
+    </div>
+    <div class="ig-caption-box">
+      <div class="ig-caption-text">Log trucks. Equipment. Cargo. Workers' comp. DOT compliance. We handle all of it — and we have been since 1987. 🚛 When your operation is on the road, your coverage needs to keep up.<br><br>📞 (843) 761-3999 | Link in bio</div>
+      <div class="ig-caption-tags">#TruckingInsurance #LogTruck #CommercialTrucking #SwampFoxAgency #SCInsurance #DOTCompliance #MotorCarrier #WorkersComp #FleetInsurance</div>
+    </div>
+  </div>
+
+  <!-- Instagram Post 3 — Summit -->
+  <div class="ig-post">
+    <div class="ig-canvas" style="background:var(--forest)">
+      <div class="ig-bg" style="background-image:url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&q=82')"></div>
+      <div class="ig-content">
+        <img class="ig-logo" src="images/swamp-fox-logo.webp" alt="Swamp Fox Agency" onerror="this.style.display='none'">
+        <div class="ig-rule"></div>
+        <div class="ig-headline">Swamp Fox <em>Summit 2026</em></div>
+        <div class="ig-sub">September 15, 2026 &bull; Moncks Corner, SC<br>The Southeast&rsquo;s Forestry &amp; Trucking Conference</div>
+        <span class="ig-cta">Register Free</span>
+      </div>
+    </div>
+    <div class="ig-bottom">
+      <span class="ig-handle">@swampfoxagency</span>
+      <div class="ig-icons">
+        <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+      </div>
+    </div>
+    <div class="ig-caption-box">
+      <div class="ig-caption-text">Mark your calendar. 📅 Swamp Fox Summit 2026 — September 15 in Moncks Corner, SC. A full day of real sessions for timber operators, truckers, and safety professionals. Market outlook. DOT updates. Claims panels. And yes — the Pinnacle Award ceremony. Registration is free for SCTPA members &amp; Swamp Fox clients. Link in bio.</div>
+      <div class="ig-caption-tags">#SwampFoxSummit2026 #SCTPA #ForestryIndustry #TruckingIndustry #SouthCarolina #RiskManagement #Insurance #TimberConference #MonksCorneSC</div>
+    </div>
+  </div>
+
+</div>
+<p style="color:var(--mid);font-size:.82rem;margin-top:1rem">Click any LinkedIn post to reveal the full copy text ready to paste. All 6 posts use the same Swamp Fox brand palette: forest green #1E392A, teal #00635B, and gold #C49A3C.</p>
+</body>
+</html>
